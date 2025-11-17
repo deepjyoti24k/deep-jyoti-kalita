@@ -236,7 +236,7 @@
           <div class="row g-4">
 
             
-<!-- Slider 1 -->
+<!-- Slider 6 -->
 <div id="slider1" class="col-lg-12 column">
   <div class="cmf-sl">
     <div class="slider">
@@ -245,11 +245,12 @@
 
         <img
           class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/1%20Slider/1.jpeg?updatedAt=1763401999178" alt="Slide"
+          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/1.jpeg" alt="Slide"
         />
+        
         <iframe
   class="video-slide"
-  src="https://www.youtube.com/embed/j5ayt41kfXc?rel=0"
+  src="https://www.youtube.com/embed/leFNAW5ny5c?rel=0"
   title="YouTube video player"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -257,42 +258,40 @@
   allowfullscreen
   style="display: none;"
 ></iframe>
-        <iframe
-  class="video-slide"
-  src="https://www.youtube.com/embed/2F2f6cod93Q?rel=0"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin" 
-  allowfullscreen
-  style="display: none;"
-></iframe>
+        
         <button class="arrow right">&#10095;</button>
       </div>
 
       <div class="" style="margin-top: 10px">
-        <h5>The Arbitrary</h5> </div>
+        <h5>Title: The One With Bad Blood</h5> </div>
 
-      <div class="about about-text"></div>
+      <div class="about about-text">Size: 24 x3 6 (each)</div>
 
-        <div class="about material-text"></div>
+        <div class="about material-text">Material: Acrylic, fiberglass, gold foil, paper, programmed led</div>
 
         <div class="" style="color: #000"><p></p></div>
       
       <div class="thumbnails" id="thumbnail-container">
         <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/1%20Slider/1.jpeg?updatedAt=1763401999178" class="active"
+          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/1.jpeg" class="active"
+        />
+        <img
+          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/2.jpeg" class="active"
+        />
+        <img
+          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/3.jpeg" class="active"
+        />
+        <img
+          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/4.jpeg" class="active"
+        />
+        <img
+          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/5.jpeg" class="active"
         />
         
-        
           <img
-  src="https://img.youtube.com/vi/j5ayt41kfXc/0.jpg"
+  src="https://img.youtube.com/vi/leFNAW5ny5c/0.jpg"
   alt="Video Thumbnail"
-/>
-          <img
-  src="https://img.youtube.com/vi/2F2f6cod93Q/0.jpg"
-  alt="Video Thumbnail"
-/>
+/> 
         </div>
     </div>
   </div>
@@ -334,20 +333,24 @@
     // 1. Find the wrapper element
     const slider = document.getElementById(sliderId);
     
+    // Safety check: If slider or data is missing, just stop.
+    if (!slider || !slidesData || slidesData.length === 0) {
+      console.error("Slider " + sliderId + " is missing HTML or data.");
+      return;
+    }
+
     // 2. Find all elements for this slider
     const mainImage = slider.querySelector(".main-image");
     const aboutText = slider.querySelector(".about-text");
     const materialText = slider.querySelector(".material-text");
-    const thumbnails = slider.querySelectorAll(".thumbnails img");
     const leftArrow = slider.querySelector(".arrow.left");
     const rightArrow = slider.querySelector(".arrow.right");
+    const thumbnailContainer = slider.querySelector(".thumbnails");
+    const thumbnails = slider.querySelectorAll(".thumbnails img");
 
-    // --- START: CORRECTED CODE ---
-    // Get ALL video slides (not just one)
-    const videoSlides = slider.querySelectorAll(".video-slide"); 
-    // Store all their src attributes in an array
+    // Get ALL video iframes and their original src
+    const videoSlides = slider.querySelectorAll(".video-slide");
     const videoSrcs = Array.from(videoSlides).map(video => video.src);
-    // --- END: CORRECTED CODE ---
 
     let currentIndex = 0;
 
@@ -355,13 +358,12 @@
     function showSlide(index) {
       currentIndex = index;
       const slideData = slidesData[index];
+      if (!slideData) return; // Exit if slide data doesn't exist
 
-      // NEW LOGIC:
       if (slideData.type === "video") {
         // --- This is a VIDEO slide ---
 
-        // 1. Find which video this is (is it the 0th, 1st, 2nd video in the data?)
-        // We do this by counting how many "video" types we've seen up to this index.
+        // Find which video this is (0th, 1st, 2nd video in the data array?)
         let videoIndex = 0;
         for (let i = 0; i < index; i++) {
           if (slidesData[i].type === "video") {
@@ -369,63 +371,88 @@
           }
         }
 
-        // 2. Hide the main image
-        mainImage.style.display = "none";
+        // Hide the main image
+        if (mainImage) mainImage.style.display = "none";
 
-        // 3. Loop over all found video iframes
+        // Loop over all <iframe ...> elements found in the HTML
         videoSlides.forEach((videoEl, i) => {
+          // 'i' is the HTML <iframe ...> index (0, 1, 2...)
+          // 'videoIndex' is the data { type: "video" } index (0, 1, 2...)
+          
           if (i === videoIndex) {
-            // This is the correct video to show
-            videoEl.src = videoSrcs[i]; // Restore its original src
+            // This is the correct <iframe> for the correct data object. Show it.
+            if (videoSrcs[i]) videoEl.src = videoSrcs[i];
             videoEl.style.display = "block";
           } else {
-            // This is a different video, hide it and stop it
+            // This is a different <iframe>. Hide it and stop it.
             videoEl.style.display = "none";
-            videoEl.src = "about:blank"; // Stop it from playing
+            videoEl.src = "about:blank";
           }
         });
 
       } else {
         // --- This is an IMAGE slide ---
         
-        // 1. Hide ALL video iframes and stop them
+        // Hide ALL video iframes and stop them
         videoSlides.forEach((videoEl, i) => {
           videoEl.style.display = "none";
           videoEl.src = "about:blank";
         });
 
-        // 2. Show the main image
-        mainImage.style.display = "block";
-        mainImage.src = slideData.img; // Set image src
+        // Show the main image
+        if (mainImage) {
+          mainImage.style.display = "block";
+          mainImage.src = slideData.img;
+        }
       }
 
       // Update the text
-      aboutText.textContent = slideData.text;
-      materialText.textContent = slideData.material;
+      if (aboutText) aboutText.textContent = slideData.text;
+      if (materialText) materialText.textContent = slideData.material;
       
       // Update the 'active' class on thumbnails
-      thumbnails.forEach((thumb) => thumb.classList.remove("active"));
-      thumbnails[index].classList.add("active");
+      thumbnails.forEach((thumb, i) => {
+        if (i === index) {
+          thumb.classList.add("active");
+        } else {
+          thumb.classList.remove("active");
+        }
+      });
     }
 
     // 4. Attach event listeners
-    leftArrow.addEventListener("click", () => {
-      let newIndex = (currentIndex - 1 + slidesData.length) % slidesData.length;
-      showSlide(newIndex);
-    });
-
-    rightArrow.addEventListener("click", () => {
-      let newIndex = (currentIndex + 1) % slidesData.length;
-      showSlide(newIndex);
-    });
-
-    thumbnails.forEach((thumb, index) => {
-      thumb.addEventListener("click", () => {
-        if (slidesData[index]) {
-          showSlide(index);
-        }
-      });
-    });
+    // We only attach them if there is more than one slide
+    if (slidesData.length > 1) {
+      if (leftArrow) {
+        leftArrow.style.display = 'block'; // Ensure it's visible
+        leftArrow.addEventListener("click", () => {
+          let newIndex = (currentIndex - 1 + slidesData.length) % slidesData.length;
+          showSlide(newIndex);
+        });
+      }
+      if (rightArrow) {
+        rightArrow.style.display = 'block'; // Ensure it's visible
+        rightArrow.addEventListener("click", () => {
+          let newIndex = (currentIndex + 1) % slidesData.length;
+          showSlide(newIndex);
+        });
+      }
+      if (thumbnailContainer) {
+        thumbnailContainer.style.display = 'flex'; // Ensure it's visible
+        thumbnails.forEach((thumb, index) => {
+          thumb.addEventListener("click", () => {
+            if (slidesData[index]) {
+              showSlide(index);
+            }
+          });
+        });
+      }
+    } else {
+      // ONLY 1 SLIDE: Hide the arrows and thumbnails
+      if (leftArrow) leftArrow.style.display = 'none';
+      if (rightArrow) rightArrow.style.display = 'none';
+      if (thumbnailContainer) thumbnailContainer.style.display = 'none';
+    }
 
     // 5. Initialize the slider to the first slide
     showSlide(0);
@@ -435,25 +462,42 @@
 
   const slider1Data = [
     {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/1%20Slider/1.jpeg?updatedAt=1763401999178",
-      text: "",
-      material: "Single Channel Video",
+      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/1.jpeg",
+      text: "Size: 24 x 36 (each)",
+      material: "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
       type: "image",
     },
     {
-      // This corresponds to the FIRST iframe (j5ayt41kfXc)
-      img: null,
-      text: "Video: The Arbitary",
-      material: "",
-      type: "video",
+      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/2.jpeg",
+      text: "Size: 24 x 36 (each)",
+      material: "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
+      type: "image",
     },
     {
-      // This corresponds to the SECOND iframe (2F2f6cod9Q)
+      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/3.jpeg",
+      text: "Size: 24 x 36 (each)",
+      material: "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
+      type: "image",
+    },
+    {
+      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/4.jpeg",
+      text: "Size: 24 x 36 (each)",
+      material: "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
+      type: "image",
+    },
+    {
+      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/5.jpeg",
+      text: "Size: 24 x 36 (each)",
+      material: "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
+      type: "image",
+    },
+    {
       img: null,
-      text: "Video: The Arbitary", 
-      material: "",
+      text: "Size: 24 x 36 (each)", 
+      material: "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
       type: "video", 
     },
+
   ];
 
   // --- INITIALIZE ALL SLIDERS WHEN THE PAGE LOADS ---
