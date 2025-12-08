@@ -71,14 +71,14 @@
       }
 
       /* This makes the video have the same 90% width */
-.cmf-sl .slide-container iframe {
-  width: 90%;
-  aspect-ratio: 16 / 9; /* Gives it a 16:9 video shape */
-  height: auto;
-  vertical-align: middle;
-  margin-left: auto;
-  margin-right: auto;
-}
+      .cmf-sl .slide-container iframe {
+        width: 90%;
+        aspect-ratio: 16 / 9; /* Gives it a 16:9 video shape */
+        height: auto;
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       .cmf-sl .arrow {
         position: absolute;
@@ -98,9 +98,10 @@
         right: 0;
       }
       .cmf-sl .about {
-        margin-top: 10px;
-        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 0;
         color: #333;
+        line-height: 1.4;
       }
       .cmf-sl .thumbnails {
         display: flex;
@@ -146,9 +147,9 @@
           object-fit: cover;
         }
         /* ADD THIS RULE for the mobile video width */
-  .cmf-sl .slide-container iframe {
-    width: 85%;
-  }
+        .cmf-sl .slide-container iframe {
+          width: 85%;
+        }
         .cmf-sl .about {
           margin-top: 10px;
           font-size: 13px;
@@ -234,335 +235,377 @@
       <div class="mt-50">
         <div class="container">
           <div class="row g-4">
+            <!-- Slider 1 -->
+            <div id="slider1" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-            
-<!-- Slider 1 -->
-<div id="slider1" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/1%20Slider/1.jpeg?updatedAt=1763401999178"
+                      alt="Slide"
+                    />
+                    <iframe
+                      class="video-slide"
+                      src="https://www.youtube.com/embed/j5ayt41kfXc?rel=0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      style="display: none"
+                    ></iframe>
+                    <iframe
+                      class="video-slide"
+                      src="https://www.youtube.com/embed/2F2f6cod93Q?rel=0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      style="display: none"
+                    ></iframe>
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/1%20Slider/1.jpeg?updatedAt=1763401999178" alt="Slide"
-        />
-        <iframe
-  class="video-slide"
-  src="https://www.youtube.com/embed/j5ayt41kfXc?rel=0"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin" 
-  allowfullscreen
-  style="display: none;"
-></iframe>
-        <iframe
-  class="video-slide"
-  src="https://www.youtube.com/embed/2F2f6cod93Q?rel=0"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin" 
-  allowfullscreen
-  style="display: none;"
-></iframe>
-        <button class="arrow right">&#10095;</button>
-      </div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title:I am proud to be...</h5>
+                  </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title:I am proud to be...</h5> </div>
+                  <div class="about about-text">
+                    Dimension: 180"x 120" (installation area)
+                  </div>
 
-      <div class="about about-text">Dimension: 180"x 120" (installation area)</div>
+                  <div class="about material-text">
+                    Material:Paper, Oil on canvas, silicon rubber and mechanical
+                    motor
+                  </div>
 
-        <div class="about material-text">Material:Paper, Oil on canvas, silicon rubber and mechanical motor</div>
+                  <div class="" style="color: #000"><p>Date:2011</p></div>
 
-        <div class="" style="color: #000"><p>Date:2011</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/1%20Slider/1.jpeg?updatedAt=1763401999178" class="active"
-        />
-        
-        
-          <img
-  src="https://img.youtube.com/vi/j5ayt41kfXc/0.jpg"
-  alt="Video Thumbnail"
-/>
-          <img
-  src="https://img.youtube.com/vi/2F2f6cod93Q/0.jpg"
-  alt="Video Thumbnail"
-/>
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/1%20Slider/1.jpeg?updatedAt=1763401999178"
+                      class="active"
+                    />
 
-<!-- Slider 2 -->
-<div id="slider2" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                    <img
+                      src="https://img.youtube.com/vi/j5ayt41kfXc/0.jpg"
+                      alt="Video Thumbnail"
+                    />
+                    <img
+                      src="https://img.youtube.com/vi/2F2f6cod93Q/0.jpg"
+                      alt="Video Thumbnail"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/2%20Slider/1.jpeg" alt="Slide"
-        />
-        <iframe
-  class="video-slide"
-  src="https://www.youtube.com/embed/ffirDBVKDdA?rel=0"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin" 
-  allowfullscreen
-  style="display: none;"
-></iframe>
-        
-        <button class="arrow right">&#10095;</button>
-      </div>
+            <!-- Slider 2 -->
+            <div id="slider2" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: How Can I Tell You How Much I Love You</h5> </div>
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/2%20Slider/1.jpeg"
+                      alt="Slide"
+                    />
+                    <iframe
+                      class="video-slide"
+                      src="https://www.youtube.com/embed/ffirDBVKDdA?rel=0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      style="display: none"
+                    ></iframe>
 
-      <div class="about about-text">Size: 43"x 60" (Each Panel)</div>
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-        <div class="about material-text">Material: Acrlic, Archival Print, Cloth, Synthetic Hair, Water Supply and Drying Mechanism</div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: How Can I Tell You How Much I Love You</h5>
+                  </div>
 
-        <div class="" style="color: #000"><p>2012</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/2%20Slider/1.jpeg" class="active"
-        />
-          <img
-  src="https://img.youtube.com/vi/ffirDBVKDdA/0.jpg"
-  alt="Video Thumbnail"
-/> 
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="about about-text">
+                    Size: 43"x 60" (Each Panel)
+                  </div>
 
-<!-- Slider 3 -->
-<div id="slider3" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="about material-text">
+                    Material: Acrlic, Archival Print, Cloth, Synthetic Hair,
+                    Water Supply and Drying Mechanism
+                  </div>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/1.jpeg" alt="Slide"
-        />
-        
-        
-        <button class="arrow right">&#10095;</button>
-      </div>
+                  <div class="" style="color: #000"><p>2012</p></div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: 8 out of 10</h5> </div>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/2%20Slider/1.jpeg"
+                      class="active"
+                    />
+                    <img
+                      src="https://img.youtube.com/vi/ffirDBVKDdA/0.jpg"
+                      alt="Video Thumbnail"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      <div class="about about-text">Size:18 x 24</div>
+            <!-- Slider 3 -->
+            <div id="slider3" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-        <div class="about material-text">Material: Paper, pencil and synthetic hair</div>
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/1.jpeg"
+                      alt="Slide"
+                    />
 
-        <div class="" style="color: #000"><p></p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/1.jpeg" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/2.jpeg" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/3.jpeg" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/4.jpeg" class="active"
-        />
-          
-        </div>
-    </div>
-  </div>
-</div>
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-<!-- Slider 4 -->
-<div id="slider4" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: 8 out of 10</h5>
+                  </div>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/4%20slider/1.jpeg" alt="Slide"
-        />
-        
-        
-        <button class="arrow right">&#10095;</button>
-      </div>
+                  <div class="about about-text">Size:18 x 24</div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: Untitled</h5> </div>
+                  <div class="about material-text">
+                    Material: Paper, pencil and synthetic hair
+                  </div>
 
-      <div class="about about-text">Size: 60 x 36 x 36</div>
+                  <div class="" style="color: #000"><p></p></div>
 
-        <div class="about material-text">Material: Artificial grass, human skull, led, wood</div>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/1.jpeg"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/2.jpeg"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/3.jpeg"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/4.jpeg"
+                      class="active"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <div class="" style="color: #000"><p>2011</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/4%20slider/1.jpeg" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/4%20slider/2.jpeg" class="active"
-        />
-        </div>
-    </div>
-  </div>
-</div>
+            <!-- Slider 4 -->
+            <div id="slider4" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-<!-- Slider 5 -->
-<div id="slider5" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/4%20slider/1.jpeg"
+                      alt="Slide"
+                    />
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/1.jpeg" alt="Slide"
-        />
-        
-        <iframe
-  class="video-slide"
-  src="https://www.youtube.com/embed/_m0lWNic3w8?rel=0"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin" 
-  allowfullscreen
-  style="display: none;"
-></iframe>
-        
-        <button class="arrow right">&#10095;</button>
-      </div>
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: King in waiting</h5> </div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: Untitled</h5>
+                  </div>
 
-      <div class="about about-text">Size: 72 x 48 x 36</div>
+                  <div class="about about-text">Size: 60 x 36 x 36</div>
 
-        <div class="about material-text">Material: Fabric, programmed circuit, wood</div>
+                  <div class="about material-text">
+                    Material: Artificial grass, human skull, led, wood
+                  </div>
 
-        <div class="" style="color: #000"><p>2011</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/1.jpeg" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/2.jpeg" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/3.jpeg" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/5.jpeg" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/4.jpeg" class="active"
-        />
-        
-          <img
-  src="https://img.youtube.com/vi/_m0lWNic3w8/0.jpg"
-  alt="Video Thumbnail"
-/> 
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="" style="color: #000"><p>2011</p></div>
 
-<!-- Slider 6 -->
-<div id="slider6" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/4%20slider/1.jpeg"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/4%20slider/2.jpeg"
+                      class="active"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/1.jpeg" alt="Slide"
-        />
-        
-        <iframe
-  class="video-slide"
-  src="https://www.youtube.com/embed/leFNAW5ny5c?rel=0"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin" 
-  allowfullscreen
-  style="display: none;"
-></iframe>
+            <!-- Slider 5 -->
+            <div id="slider5" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-<iframe
-  class="video-slide"
-  src="https://www.youtube.com/embed/sCLkgZA2cXk?rel=0"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin" 
-  allowfullscreen
-  style="display: none;"
-></iframe>
-        
-        <button class="arrow right">&#10095;</button>
-      </div>
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/1.jpeg"
+                      alt="Slide"
+                    />
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: The One With Bad Blood</h5> </div>
+                    <iframe
+                      class="video-slide"
+                      src="https://www.youtube.com/embed/_m0lWNic3w8?rel=0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      style="display: none"
+                    ></iframe>
 
-      <div class="about about-text">Size: 24 x3 6 (each)</div>
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-        <div class="about material-text">Material: Acrylic, fiberglass, gold foil, paper, programmed led</div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: King in waiting</h5>
+                  </div>
 
-        <div class="" style="color: #000"><p></p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/1.jpeg" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/2.jpeg" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/3.jpeg" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/4.jpeg" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/5.jpeg" class="active"
-        />
-        
-          <img
-  src="https://img.youtube.com/vi/leFNAW5ny5c/0.jpg"
-  alt="Video Thumbnail"
-/> 
-          <img
-  src="https://img.youtube.com/vi/sCLkgZA2cXk/0.jpg"
-  alt="Video Thumbnail"
-/> 
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="about about-text">Size: 72 x 48 x 36</div>
 
+                  <div class="about material-text">
+                    Material: Fabric, programmed circuit, wood
+                  </div>
+
+                  <div class="" style="color: #000"><p>2011</p></div>
+
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/1.jpeg"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/2.jpeg"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/3.jpeg"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/5.jpeg"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/4.jpeg"
+                      class="active"
+                    />
+
+                    <img
+                      src="https://img.youtube.com/vi/_m0lWNic3w8/0.jpg"
+                      alt="Video Thumbnail"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider 6 -->
+            <div id="slider6" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
+
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/1.jpeg"
+                      alt="Slide"
+                    />
+
+                    <iframe
+                      class="video-slide"
+                      src="https://www.youtube.com/embed/leFNAW5ny5c?rel=0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      style="display: none"
+                    ></iframe>
+
+                    <iframe
+                      class="video-slide"
+                      src="https://www.youtube.com/embed/sCLkgZA2cXk?rel=0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      style="display: none"
+                    ></iframe>
+
+                    <button class="arrow right">&#10095;</button>
+                  </div>
+
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: The One With Bad Blood</h5>
+                  </div>
+
+                  <div class="about about-text">Size: 24 x3 6 (each)</div>
+
+                  <div class="about material-text">
+                    Material: Acrylic, fiberglass, gold foil, paper, programmed
+                    led
+                  </div>
+
+                  <div class="" style="color: #000"><p></p></div>
+
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/1.jpeg"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/2.jpeg"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/3.jpeg"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/4.jpeg"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/5.jpeg"
+                      class="active"
+                    />
+
+                    <img
+                      src="https://img.youtube.com/vi/leFNAW5ny5c/0.jpg"
+                      alt="Video Thumbnail"
+                    />
+                    <img
+                      src="https://img.youtube.com/vi/sCLkgZA2cXk/0.jpg"
+                      alt="Video Thumbnail"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -588,354 +631,362 @@
     <script src="./assets/js/countdown.min.js"></script>
     <script src="./assets/js/main.js"></script>
 
-    
-     <script>
-  /**
-   * This function initializes a single, independent slider.
-   * @param {string} sliderId - The ID of the main wrapper (e.g., "slider1").
-   * @param {Array<Object>} slidesData - An array of objects with data for this slider.
-   */
-  function initializeSlider(sliderId, slidesData) {
-    // 1. Find the wrapper element
-    const slider = document.getElementById(sliderId);
-    
-    // Safety check: If slider or data is missing, just stop.
-    if (!slider || !slidesData || slidesData.length === 0) {
-      console.error("Slider " + sliderId + " is missing HTML or data.");
-      return;
-    }
+    <script>
+      /**
+       * This function initializes a single, independent slider.
+       * @param {string} sliderId - The ID of the main wrapper (e.g., "slider1").
+       * @param {Array<Object>} slidesData - An array of objects with data for this slider.
+       */
+      function initializeSlider(sliderId, slidesData) {
+        // 1. Find the wrapper element
+        const slider = document.getElementById(sliderId);
 
-    // 2. Find all elements for this slider
-    const mainImage = slider.querySelector(".main-image");
-    const aboutText = slider.querySelector(".about-text");
-    const materialText = slider.querySelector(".material-text");
-    const leftArrow = slider.querySelector(".arrow.left");
-    const rightArrow = slider.querySelector(".arrow.right");
-    const thumbnailContainer = slider.querySelector(".thumbnails");
-    const thumbnails = slider.querySelectorAll(".thumbnails img");
-
-    // Get ALL video iframes and their original src
-    const videoSlides = slider.querySelectorAll(".video-slide");
-    const videoSrcs = Array.from(videoSlides).map(video => video.src);
-
-    let currentIndex = 0;
-
-    // 3. Define the function to show a slide
-    function showSlide(index) {
-      currentIndex = index;
-      const slideData = slidesData[index];
-      if (!slideData) return; // Exit if slide data doesn't exist
-
-      if (slideData.type === "video") {
-        // --- This is a VIDEO slide ---
-
-        // Find which video this is (0th, 1st, 2nd video in the data array?)
-        let videoIndex = 0;
-        for (let i = 0; i < index; i++) {
-          if (slidesData[i].type === "video") {
-            videoIndex++;
-          }
+        // Safety check: If slider or data is missing, just stop.
+        if (!slider || !slidesData || slidesData.length === 0) {
+          console.error("Slider " + sliderId + " is missing HTML or data.");
+          return;
         }
 
-        // Hide the main image
-        if (mainImage) mainImage.style.display = "none";
+        // 2. Find all elements for this slider
+        const mainImage = slider.querySelector(".main-image");
+        const aboutText = slider.querySelector(".about-text");
+        const materialText = slider.querySelector(".material-text");
+        const leftArrow = slider.querySelector(".arrow.left");
+        const rightArrow = slider.querySelector(".arrow.right");
+        const thumbnailContainer = slider.querySelector(".thumbnails");
+        const thumbnails = slider.querySelectorAll(".thumbnails img");
 
-        // Loop over all <iframe ...> elements found in the HTML
-        videoSlides.forEach((videoEl, i) => {
-          // 'i' is the HTML <iframe ...> index (0, 1, 2...)
-          // 'videoIndex' is the data { type: "video" } index (0, 1, 2...)
-          
-          if (i === videoIndex) {
-            // This is the correct <iframe> for the correct data object. Show it.
-            if (videoSrcs[i]) videoEl.src = videoSrcs[i];
-            videoEl.style.display = "block";
+        // Get ALL video iframes and their original src
+        const videoSlides = slider.querySelectorAll(".video-slide");
+        const videoSrcs = Array.from(videoSlides).map((video) => video.src);
+
+        let currentIndex = 0;
+
+        // 3. Define the function to show a slide
+        function showSlide(index) {
+          currentIndex = index;
+          const slideData = slidesData[index];
+          if (!slideData) return; // Exit if slide data doesn't exist
+
+          if (slideData.type === "video") {
+            // --- This is a VIDEO slide ---
+
+            // Find which video this is (0th, 1st, 2nd video in the data array?)
+            let videoIndex = 0;
+            for (let i = 0; i < index; i++) {
+              if (slidesData[i].type === "video") {
+                videoIndex++;
+              }
+            }
+
+            // Hide the main image
+            if (mainImage) mainImage.style.display = "none";
+
+            // Loop over all <iframe ...> elements found in the HTML
+            videoSlides.forEach((videoEl, i) => {
+              // 'i' is the HTML <iframe ...> index (0, 1, 2...)
+              // 'videoIndex' is the data { type: "video" } index (0, 1, 2...)
+
+              if (i === videoIndex) {
+                // This is the correct <iframe> for the correct data object. Show it.
+                if (videoSrcs[i]) videoEl.src = videoSrcs[i];
+                videoEl.style.display = "block";
+              } else {
+                // This is a different <iframe>. Hide it and stop it.
+                videoEl.style.display = "none";
+                videoEl.src = "about:blank";
+              }
+            });
           } else {
-            // This is a different <iframe>. Hide it and stop it.
-            videoEl.style.display = "none";
-            videoEl.src = "about:blank";
+            // --- This is an IMAGE slide ---
+
+            // Hide ALL video iframes and stop them
+            videoSlides.forEach((videoEl, i) => {
+              videoEl.style.display = "none";
+              videoEl.src = "about:blank";
+            });
+
+            // Show the main image
+            if (mainImage) {
+              mainImage.style.display = "block";
+              mainImage.src = slideData.img;
+            }
           }
-        });
 
-      } else {
-        // --- This is an IMAGE slide ---
-        
-        // Hide ALL video iframes and stop them
-        videoSlides.forEach((videoEl, i) => {
-          videoEl.style.display = "none";
-          videoEl.src = "about:blank";
-        });
+          // Update the text
+          if (aboutText) aboutText.textContent = slideData.text;
+          if (materialText) materialText.textContent = slideData.material;
 
-        // Show the main image
-        if (mainImage) {
-          mainImage.style.display = "block";
-          mainImage.src = slideData.img;
-        }
-      }
-
-      // Update the text
-      if (aboutText) aboutText.textContent = slideData.text;
-      if (materialText) materialText.textContent = slideData.material;
-      
-      // Update the 'active' class on thumbnails
-      thumbnails.forEach((thumb, i) => {
-        if (i === index) {
-          thumb.classList.add("active");
-        } else {
-          thumb.classList.remove("active");
-        }
-      });
-    }
-
-    // 4. Attach event listeners
-    // We only attach them if there is more than one slide
-    if (slidesData.length > 1) {
-      if (leftArrow) {
-        leftArrow.style.display = 'block'; // Ensure it's visible
-        leftArrow.addEventListener("click", () => {
-          let newIndex = (currentIndex - 1 + slidesData.length) % slidesData.length;
-          showSlide(newIndex);
-        });
-      }
-      if (rightArrow) {
-        rightArrow.style.display = 'block'; // Ensure it's visible
-        rightArrow.addEventListener("click", () => {
-          let newIndex = (currentIndex + 1) % slidesData.length;
-          showSlide(newIndex);
-        });
-      }
-      if (thumbnailContainer) {
-        thumbnailContainer.style.display = 'flex'; // Ensure it's visible
-        thumbnails.forEach((thumb, index) => {
-          thumb.addEventListener("click", () => {
-            if (slidesData[index]) {
-              showSlide(index);
+          // Update the 'active' class on thumbnails
+          thumbnails.forEach((thumb, i) => {
+            if (i === index) {
+              thumb.classList.add("active");
+            } else {
+              thumb.classList.remove("active");
             }
           });
-        });
+        }
+
+        // 4. Attach event listeners
+        // We only attach them if there is more than one slide
+        if (slidesData.length > 1) {
+          if (leftArrow) {
+            leftArrow.style.display = "block"; // Ensure it's visible
+            leftArrow.addEventListener("click", () => {
+              let newIndex =
+                (currentIndex - 1 + slidesData.length) % slidesData.length;
+              showSlide(newIndex);
+            });
+          }
+          if (rightArrow) {
+            rightArrow.style.display = "block"; // Ensure it's visible
+            rightArrow.addEventListener("click", () => {
+              let newIndex = (currentIndex + 1) % slidesData.length;
+              showSlide(newIndex);
+            });
+          }
+          if (thumbnailContainer) {
+            thumbnailContainer.style.display = "flex"; // Ensure it's visible
+            thumbnails.forEach((thumb, index) => {
+              thumb.addEventListener("click", () => {
+                if (slidesData[index]) {
+                  showSlide(index);
+                }
+              });
+            });
+          }
+        } else {
+          // ONLY 1 SLIDE: Hide the arrows and thumbnails
+          if (leftArrow) leftArrow.style.display = "none";
+          if (rightArrow) rightArrow.style.display = "none";
+          if (thumbnailContainer) thumbnailContainer.style.display = "none";
+        }
+
+        // 5. Initialize the slider to the first slide
+        showSlide(0);
       }
-    } else {
-      // ONLY 1 SLIDE: Hide the arrows and thumbnails
-      if (leftArrow) leftArrow.style.display = 'none';
-      if (rightArrow) rightArrow.style.display = 'none';
-      if (thumbnailContainer) thumbnailContainer.style.display = 'none';
-    }
 
-    // 5. Initialize the slider to the first slide
-    showSlide(0);
-  }
+      // --- ALL YOUR SLIDER DATA GOES HERE ---
 
-  // --- ALL YOUR SLIDER DATA GOES HERE ---
+      const slider1Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/1%20Slider/1.jpeg?updatedAt=1763401999178",
+          text: "Dimension: 180x 120 (installation area)",
+          material:
+            "Material:Paper, Oil on canvas, silicon rubber and mechanical motor",
+          type: "image",
+        },
+        {
+          // This corresponds to the FIRST iframe (j5ayt41kfXc)
+          img: null,
+          text: "Dimension: 180x 120 (installation area)",
+          material:
+            "Material:Paper, Oil on canvas, silicon rubber and mechanical motor",
+          type: "video",
+        },
+        {
+          // This corresponds to the SECOND iframe (2F2f6cod9Q)
+          img: null,
+          text: "Dimension: 180x 120 (installation area)",
+          material:
+            "Material:Paper, Oil on canvas, silicon rubber and mechanical motor",
+          type: "video",
+        },
+      ];
 
-  const slider1Data = [
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/1%20Slider/1.jpeg?updatedAt=1763401999178",
-      text: "Dimension: 180x 120 (installation area)",
-      material: "Material:Paper, Oil on canvas, silicon rubber and mechanical motor",
-      type: "image",
-    },
-    {
-      // This corresponds to the FIRST iframe (j5ayt41kfXc)
-      img: null,
-      text: "Dimension: 180x 120 (installation area)",
-      material: "Material:Paper, Oil on canvas, silicon rubber and mechanical motor",
-      type: "video",
-    },
-    {
-      // This corresponds to the SECOND iframe (2F2f6cod9Q)
-      img: null,
-      text: "Dimension: 180x 120 (installation area)", 
-      material: "Material:Paper, Oil on canvas, silicon rubber and mechanical motor",
-      type: "video", 
-    },
-  ];
+      const slider2Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/2%20Slider/1.jpeg",
+          text: "Size: 43 x 60 (Each Panel)",
+          material:
+            "Material: Acrlic, Archival Print, Cloth, Synthetic Hair, Water Supply and Drying Mechanism",
+          type: "image",
+        },
+        {
+          // This corresponds to the FIRST iframe (j5ayt41kfXc)
+          img: null,
+          text: "Size: 43 x 60 (Each Panel)",
+          material:
+            "Material: Acrlic, Archival Print, Cloth, Synthetic Hair, Water Supply and Drying Mechanism",
+          type: "video",
+        },
+      ];
 
-  const slider2Data = [
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/2%20Slider/1.jpeg",
-      text: "Size: 43 x 60 (Each Panel)",
-      material: "Material: Acrlic, Archival Print, Cloth, Synthetic Hair, Water Supply and Drying Mechanism",
-      type: "image",
-    },
-    {
-      // This corresponds to the FIRST iframe (j5ayt41kfXc)
-      img: null,
-      text: "Size: 43 x 60 (Each Panel)",
-      material: "Material: Acrlic, Archival Print, Cloth, Synthetic Hair, Water Supply and Drying Mechanism",
-      type: "video",
-    },
-  ];
+      const slider3Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/1.jpeg",
+          text: "Size: 18 x 24",
+          material: "Material: Paper, pencil and synthetic hair",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/2.jpeg",
+          text: "Size: 18 x 24",
+          material: "Material: Paper, pencil and synthetic hair",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/3.jpeg",
+          text: "Size: 18 x 24",
+          material: "Material: Paper, pencil and synthetic hair",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/4.jpeg",
+          text: "Size: 18 x 24",
+          material: "Material: Paper, pencil and synthetic hair",
+          type: "image",
+        },
+      ];
 
-  const slider3Data = [
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/1.jpeg",
-      text: "Size: 18 x 24",
-      material: "Material: Paper, pencil and synthetic hair",
-      type: "image",
-    },
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/2.jpeg",
-      text: "Size: 18 x 24",
-      material: "Material: Paper, pencil and synthetic hair",
-      type: "image",
-    },
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/3.jpeg",
-      text: "Size: 18 x 24",
-      material: "Material: Paper, pencil and synthetic hair",
-      type: "image",
-    },
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/3%20slider/4.jpeg",
-      text: "Size: 18 x 24",
-      material: "Material: Paper, pencil and synthetic hair",
-      type: "image",
-    },
-  ];
+      const slider4Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/4%20slider/1.jpeg",
+          text: "Size: 60 x 36 x 36",
+          material: "Material: Artificial grass, human skull, led, wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/4%20slider/2.jpeg",
+          text: "Size: 60 x 36 x 36",
+          material: "Material: Artificial grass, human skull, led, wood",
+          type: "image",
+        },
+      ];
 
-  const slider4Data = [
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/4%20slider/1.jpeg",
-      text: "Size: 60 x 36 x 36",
-      material: "Material: Artificial grass, human skull, led, wood",
-      type: "image",
-    },
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/4%20slider/2.jpeg",
-      text: "Size: 60 x 36 x 36",
-      material: "Material: Artificial grass, human skull, led, wood",
-      type: "image",
-    },
-  ];
+      const slider5Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/1.jpeg",
+          text: "Size: 72x 48 x 36",
+          material: "Material: Fabric, programmed circuit, wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/2.jpeg",
+          text: "Size: 72x 48 x 36",
+          material: "Material: Fabric, programmed circuit, wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/3.jpeg",
+          text: "Size: 72x 48 x 36",
+          material: "Material: Fabric, programmed circuit, wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/5.jpeg",
+          text: "Size: 72x 48 x 36",
+          material: "Material: Fabric, programmed circuit, wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/4.jpeg",
+          text: "Size: 72x 48 x 36",
+          material: "Material: Fabric, programmed circuit, wood",
+          type: "image",
+        },
+        {
+          img: null,
+          text: "Size: 72x 48 x 36",
+          material: "Material: Fabric, programmed circuit, wood",
+          type: "video",
+        },
+      ];
 
-  const slider5Data = [
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/1.jpeg",
-      text: "Size: 72x 48 x 36",
-      material: "Material: Fabric, programmed circuit, wood",
-      type: "image",
-    },
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/2.jpeg",
-      text: "Size: 72x 48 x 36",
-      material: "Material: Fabric, programmed circuit, wood",
-      type: "image",
-    },
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/3.jpeg",
-      text: "Size: 72x 48 x 36",
-      material: "Material: Fabric, programmed circuit, wood",
-      type: "image",
-    },
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/5.jpeg",
-      text: "Size: 72x 48 x 36",
-      material: "Material: Fabric, programmed circuit, wood",
-      type: "image",
-    },
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/5%20slider/4.jpeg",
-      text: "Size: 72x 48 x 36",
-      material: "Material: Fabric, programmed circuit, wood",
-      type: "image",
-    },
-    {
-      img: null,
-      text: "Size: 72x 48 x 36", 
-      material: "Material: Fabric, programmed circuit, wood",
-      type: "video", 
-    },
+      const slider6Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/1.jpeg",
+          text: "Size: 24 x 36 (each)",
+          material:
+            "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/2.jpeg",
+          text: "Size: 24 x 36 (each)",
+          material:
+            "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/3.jpeg",
+          text: "Size: 24 x 36 (each)",
+          material:
+            "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/4.jpeg",
+          text: "Size: 24 x 36 (each)",
+          material:
+            "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/5.jpeg",
+          text: "Size: 24 x 36 (each)",
+          material:
+            "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
+          type: "image",
+        },
+        {
+          img: null,
+          text: "Size: 24 x 36 (each)",
+          material:
+            "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
+          type: "video",
+        },
+        {
+          img: null,
+          text: "Size: 24 x 36 (each)",
+          material:
+            "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
+          type: "video",
+        },
+      ];
 
-  ];
+      // --- INITIALIZE ALL SLIDERS WHEN THE PAGE LOADS ---
 
-const slider6Data = [
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/1.jpeg",
-      text: "Size: 24 x 36 (each)",
-      material: "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
-      type: "image",
-    },
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/2.jpeg",
-      text: "Size: 24 x 36 (each)",
-      material: "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
-      type: "image",
-    },
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/3.jpeg",
-      text: "Size: 24 x 36 (each)",
-      material: "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
-      type: "image",
-    },
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/4.jpeg",
-      text: "Size: 24 x 36 (each)",
-      material: "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
-      type: "image",
-    },
-    {
-      img: "https://ik.imagekit.io/deepjyotikalita/Work/6%20Collective%20Metamorphosis/6%20slider/5.jpeg",
-      text: "Size: 24 x 36 (each)",
-      material: "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
-      type: "image",
-    },
-    {
-      img: null,
-      text: "Size: 24 x 36 (each)", 
-      material: "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
-      type: "video", 
-    },
-    {
-      img: null,
-      text: "Size: 24 x 36 (each)", 
-      material: "Material: Acrylic, fiberglass, gold foil, paper, programmed led",
-      type: "video", 
-    },
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize slider 1
+        initializeSlider("slider1", slider1Data);
 
-  ];
+        // Initialize slider 2
+        if (document.getElementById("slider2")) {
+          initializeSlider("slider2", slider2Data);
+          // initializeSlider("slider2", slider2Data); // Make sure to define slider2Data
+        }
 
-  // --- INITIALIZE ALL SLIDERS WHEN THE PAGE LOADS ---
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    // Initialize slider 1
-    initializeSlider("slider1", slider1Data);
-    
-    // Initialize slider 2
-    if (document.getElementById("slider2")) {
-      initializeSlider("slider2", slider2Data);
-      // initializeSlider("slider2", slider2Data); // Make sure to define slider2Data
-    }
+        // Initialize slider 3
+        if (document.getElementById("slider3")) {
+          initializeSlider("slider3", slider3Data);
+        }
 
-    // Initialize slider 3
-    if (document.getElementById("slider3")) {
-      initializeSlider("slider3", slider3Data);
-    }
+        // Initialize slider 4
+        if (document.getElementById("slider4")) {
+          initializeSlider("slider4", slider4Data);
+        }
 
-    // Initialize slider 4
-    if (document.getElementById("slider4")) {
-      initializeSlider("slider4", slider4Data);
-    }
+        // Initialize slider 5
+        if (document.getElementById("slider5")) {
+          initializeSlider("slider5", slider5Data);
+        }
 
-    // Initialize slider 5
-    if (document.getElementById("slider5")) {
-      initializeSlider("slider5", slider5Data);
-    }
+        // Initialize slider 6
+        if (document.getElementById("slider6")) {
+          initializeSlider("slider6", slider6Data);
+        }
 
-    // Initialize slider 6
-    if (document.getElementById("slider6")) {
-      initializeSlider("slider6", slider6Data);
-    }
+        // Initialize slider 7
+        if (document.getElementById("slider7")) {
+          // initializeSlider("slider7", slider7Data);
+        }
 
-    // Initialize slider 7
-    if (document.getElementById("slider7")) {
-      // initializeSlider("slider7", slider7Data);
-    }
-
-    // Initialize slider 8
-    if (document.getElementById("slider8")) {
-      // initializeSlider("slider8", slider8Data);
-    }
-  });
-
-</script>
+        // Initialize slider 8
+        if (document.getElementById("slider8")) {
+          // initializeSlider("slider8", slider8Data);
+        }
+      });
+    </script>
   </body>
 </html>

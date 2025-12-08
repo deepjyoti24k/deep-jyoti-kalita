@@ -71,14 +71,14 @@
       }
 
       /* This makes the video have the same 90% width */
-.cmf-sl .slide-container iframe {
-  width: 90%;
-  aspect-ratio: 16 / 9; /* Gives it a 16:9 video shape */
-  height: auto;
-  vertical-align: middle;
-  margin-left: auto;
-  margin-right: auto;
-}
+      .cmf-sl .slide-container iframe {
+        width: 90%;
+        aspect-ratio: 16 / 9; /* Gives it a 16:9 video shape */
+        height: auto;
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       .cmf-sl .arrow {
         position: absolute;
@@ -98,9 +98,10 @@
         right: 0;
       }
       .cmf-sl .about {
-        margin-top: 10px;
-        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 0;
         color: #333;
+        line-height: 1.4;
       }
       .cmf-sl .thumbnails {
         display: flex;
@@ -146,9 +147,9 @@
           object-fit: cover;
         }
         /* ADD THIS RULE for the mobile video width */
-  .cmf-sl .slide-container iframe {
-    width: 85%;
-  }
+        .cmf-sl .slide-container iframe {
+          width: 85%;
+        }
         .cmf-sl .about {
           margin-top: 10px;
           font-size: 13px;
@@ -234,151 +235,179 @@
       <div class="mt-50">
         <div class="container">
           <div class="row g-4">
-
             <!-- slider 1 -->
             <div id="slider1" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-        <img
-          class="main-image" 
-          src="./assets/img/The Weight of Ashes/slider 1/1.jpg" alt="Slide"
-        />
-        <button class="arrow right">&#10095;</button>
-      </div>
+                    <img
+                      class="main-image"
+                      src="./assets/img/The Weight of Ashes/slider 1/1.jpg"
+                      alt="Slide"
+                    />
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Sediments of Time</h5> </div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Sediments of Time</h5>
+                  </div>
 
-      <div class="about about-text">Size: 20 x 12 x3 inches, 15 x 15 x 3 inches</div>
+                  <div class="about about-text">
+                    Size: 20 x 12 x3 inches, 15 x 15 x 3 inches
+                  </div>
 
-      <div class="about material-text">Material: Concrete, transparent resin, and print on paper</div>
+                  <div class="about material-text">
+                    Material: Concrete, transparent resin, and print on paper
+                  </div>
 
-      <div class="" style="color: #000"><p>Year : 2024</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="./assets/img/The Weight of Ashes/slider 1/1.jpg" class="active"
-        />
-        <img
-          src="./assets/img/The Weight of Ashes/slider 1/2.jpg" />
-        <img
-          src="./assets/img/The Weight of Ashes/slider 1/3.jpg" />
-        <img
-          src="./assets/img/The Weight of Ashes/slider 1/4.jpg" />
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="" style="color: #000"><p>Year : 2024</p></div>
 
-<!-- slider 2 -->
-<div id="slider2" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="./assets/img/The Weight of Ashes/slider 1/1.jpg"
+                      class="active"
+                    />
+                    <img
+                      src="./assets/img/The Weight of Ashes/slider 1/2.jpg"
+                    />
+                    <img
+                      src="./assets/img/The Weight of Ashes/slider 1/3.jpg"
+                    />
+                    <img
+                      src="./assets/img/The Weight of Ashes/slider 1/4.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <img
-          class="main-image" 
-          src="./assets/img/The Weight of Ashes/sldier 2/1.jpg" alt="Slide"
-        />
-        <button class="arrow right">&#10095;</button>
-      </div>
+            <!-- slider 2 -->
+            <div id="slider2" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Amnesia</h5> </div>
+                    <img
+                      class="main-image"
+                      src="./assets/img/The Weight of Ashes/sldier 2/1.jpg"
+                      alt="Slide"
+                    />
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-      <div class="about about-text">Size: 11.5x5.3x1.5 inches   11.5x5.3x1.5 inches  14x5 3x1.5 inches</div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Amnesia</h5>
+                  </div>
 
-        <div class="about material-text">Material: wood, transparent resin, paper collage, stainless steel and acrylic colours</div>
+                  <div class="about about-text">
+                    Size: 11.5x5.3x1.5 inches 11.5x5.3x1.5
+                    inches  14x5 3x1.5 inches
+                  </div>
 
-        <div class="" style="color: #000"><p>Year : 2024</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="./assets/img/The Weight of Ashes/sldier 2/1.jpg"  class="active"/>
-        <img
-          src="./assets/img/The Weight of Ashes/sldier 2/2.jpg" />
-        <img
-          src="./assets/img/The Weight of Ashes/sldier 2/3.jpg" />
-        <img
-          src="./assets/img/The Weight of Ashes/sldier 2/4.jpg" />
-        
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="about material-text">
+                    Material: wood, transparent resin, paper collage, stainless
+                    steel and acrylic colours
+                  </div>
 
+                  <div class="" style="color: #000"><p>Year : 2024</p></div>
 
-<!-- Slider 3 -->
-<div id="slider3" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="./assets/img/The Weight of Ashes/sldier 2/1.jpg"
+                      class="active"
+                    />
+                    <img
+                      src="./assets/img/The Weight of Ashes/sldier 2/2.jpg"
+                    />
+                    <img
+                      src="./assets/img/The Weight of Ashes/sldier 2/3.jpg"
+                    />
+                    <img
+                      src="./assets/img/The Weight of Ashes/sldier 2/4.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <img
-          class="main-image" 
-          src="./assets/img/The Weight of Ashes/slider 3/1.jpg" alt="Slide"
-        />
+            <!-- Slider 3 -->
+            <div id="slider3" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-        <iframe
-  class="video-slide"
-  src="https://www.youtube.com/embed/x5tNQxP31wI?rel=0&loop=1&playlist=x5tNQxP31wI"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
-  style="display: none;"
-></iframe>
+                    <img
+                      class="main-image"
+                      src="./assets/img/The Weight of Ashes/slider 3/1.jpg"
+                      alt="Slide"
+                    />
 
+                    <iframe
+                      class="video-slide"
+                      src="https://www.youtube.com/embed/x5tNQxP31wI?rel=0&loop=1&playlist=x5tNQxP31wI"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      style="display: none"
+                    ></iframe>
 
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
+                  <div class="" style="margin-top: 10px">
+                    <h5>Paradox Of Abyss</h5>
+                  </div>
 
-        <button class="arrow right">&#10095;</button>
-      </div>
+                  <div class="about about-text">Size: 120" × 120" × 120"</div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Paradox Of Abyss</h5> </div>
+                  <div class="about material-text">
+                    Material: Marble, sandstone, and ink-and-milk
+                    throwing mechanism
+                  </div>
 
-      <div class="about about-text">Size: 120" × 120" × 120"</div>
+                  <div class="" style="color: #000"><p>Year : 2024</p></div>
 
-        <div class="about material-text">Material: Marble, sandstone, and ink-and-milk throwing mechanism</div>
-
-        <div class="" style="color: #000"><p>Year : 2024</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="./assets/img/The Weight of Ashes/slider 3/1.jpg" class="active"
-        />
-        <img
-          src="./assets/img/The Weight of Ashes/slider 3/2.jpg" />
-        <img
-          src="./assets/img/The Weight of Ashes/slider 3/3.jpg" />
-        <img
-          src="./assets/img/The Weight of Ashes/slider 3/4.jpg" />
-        <img
-          src="./assets/img/The Weight of Ashes/slider 3/5.jpg" />
-        <img
-          src="./assets/img/The Weight of Ashes/slider 3/6.jpg" />
-        <img
-          src="./assets/img/The Weight of Ashes/slider 3/7.jpg" />
-        <img
-          src="./assets/img/The Weight of Ashes/slider 3/8.jpg" />
-        <!-- <img
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="./assets/img/The Weight of Ashes/slider 3/1.jpg"
+                      class="active"
+                    />
+                    <img
+                      src="./assets/img/The Weight of Ashes/slider 3/2.jpg"
+                    />
+                    <img
+                      src="./assets/img/The Weight of Ashes/slider 3/3.jpg"
+                    />
+                    <img
+                      src="./assets/img/The Weight of Ashes/slider 3/4.jpg"
+                    />
+                    <img
+                      src="./assets/img/The Weight of Ashes/slider 3/5.jpg"
+                    />
+                    <img
+                      src="./assets/img/The Weight of Ashes/slider 3/6.jpg"
+                    />
+                    <img
+                      src="./assets/img/The Weight of Ashes/slider 3/7.jpg"
+                    />
+                    <img
+                      src="./assets/img/The Weight of Ashes/slider 3/8.jpg"
+                    />
+                    <!-- <img
           src="./assets/img/The Weight of Ashes/slider 3/9.jpg" /> -->
-          <img
-  src="https://img.youtube.com/vi/x5tNQxP31wI/0.jpg"
-  alt="Video Thumbnail"
-/>
-        </div>
-    </div>
-  </div>
-</div>
-
-
+                    <img
+                      src="https://img.youtube.com/vi/x5tNQxP31wI/0.jpg"
+                      alt="Video Thumbnail"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -404,260 +433,255 @@
     <script src="./assets/js/countdown.min.js"></script>
     <script src="./assets/js/main.js"></script>
 
-    
-     <script>
-  /**
-   * This function initializes a single, independent slider.
-   * @param {string} sliderId - The ID of the main wrapper (e.g., "slider1").
-   * @param {Array<Object>} slidesData - An array of objects with data for this slider.
-   */
-  function initializeSlider(sliderId, slidesData) {
-    // 1. Find the wrapper element
-    const slider = document.getElementById(sliderId);
-    
-    // 2. Find all elements for this slider
-    const mainImage = slider.querySelector(".main-image");
-    const aboutText = slider.querySelector(".about-text");
-    const materialText = slider.querySelector(".material-text");
-    const thumbnails = slider.querySelectorAll(".thumbnails img");
-    const leftArrow = slider.querySelector(".arrow.left");
-    const rightArrow = slider.querySelector(".arrow.right");
+    <script>
+      /**
+       * This function initializes a single, independent slider.
+       * @param {string} sliderId - The ID of the main wrapper (e.g., "slider1").
+       * @param {Array<Object>} slidesData - An array of objects with data for this slider.
+       */
+      function initializeSlider(sliderId, slidesData) {
+        // 1. Find the wrapper element
+        const slider = document.getElementById(sliderId);
 
-    // NEW: Find the video slide
-    const videoSlide = slider.querySelector(".video-slide");
-    // NEW: Store the original video src to pause it later
-    const videoSrc = videoSlide ? videoSlide.src : null;
+        // 2. Find all elements for this slider
+        const mainImage = slider.querySelector(".main-image");
+        const aboutText = slider.querySelector(".about-text");
+        const materialText = slider.querySelector(".material-text");
+        const thumbnails = slider.querySelectorAll(".thumbnails img");
+        const leftArrow = slider.querySelector(".arrow.left");
+        const rightArrow = slider.querySelector(".arrow.right");
 
-    let currentIndex = 0;
+        // NEW: Find the video slide
+        const videoSlide = slider.querySelector(".video-slide");
+        // NEW: Store the original video src to pause it later
+        const videoSrc = videoSlide ? videoSlide.src : null;
 
-    // 3. Define the function to show a slide
-    function showSlide(index) {
-      currentIndex = index;
-      const slideData = slidesData[index];
+        let currentIndex = 0;
 
-      // NEW LOGIC:
-      if (slideData.type === "video") {
-        // --- This is the VIDEO slide ---
-        mainImage.style.display = "none"; // Hide image
-        
-        // Set the video src back (this will load/reload it)
-        videoSlide.src = videoSrc; 
-        videoSlide.style.display = "block"; // Show video
-        
-      } else {
-        // --- This is an IMAGE slide ---
-        if (videoSlide) {
-          videoSlide.style.display = "none"; // Hide video
-          
-          // Set src to 'about:blank' to completely stop the video
-          // This prevents background reloading and Error 153
-          videoSlide.src = "about:blank"; 
+        // 3. Define the function to show a slide
+        function showSlide(index) {
+          currentIndex = index;
+          const slideData = slidesData[index];
+
+          // NEW LOGIC:
+          if (slideData.type === "video") {
+            // --- This is the VIDEO slide ---
+            mainImage.style.display = "none"; // Hide image
+
+            // Set the video src back (this will load/reload it)
+            videoSlide.src = videoSrc;
+            videoSlide.style.display = "block"; // Show video
+          } else {
+            // --- This is an IMAGE slide ---
+            if (videoSlide) {
+              videoSlide.style.display = "none"; // Hide video
+
+              // Set src to 'about:blank' to completely stop the video
+              // This prevents background reloading and Error 153
+              videoSlide.src = "about:blank";
+            }
+            mainImage.style.display = "block"; // Show image
+            mainImage.src = slideData.img; // Set image src
+          }
+
+          // Update the text
+          aboutText.textContent = slideData.text;
+          materialText.textContent = slideData.material;
+
+          // Update the 'active' class on thumbnails
+          thumbnails.forEach((thumb) => thumb.classList.remove("active"));
+          thumbnails[index].classList.add("active");
         }
-        mainImage.style.display = "block"; // Show image
-        mainImage.src = slideData.img; // Set image src
+
+        // 4. Attach event listeners
+        leftArrow.addEventListener("click", () => {
+          let newIndex =
+            (currentIndex - 1 + slidesData.length) % slidesData.length;
+          showSlide(newIndex);
+        });
+
+        rightArrow.addEventListener("click", () => {
+          let newIndex = (currentIndex + 1) % slidesData.length;
+          showSlide(newIndex);
+        });
+
+        thumbnails.forEach((thumb, index) => {
+          thumb.addEventListener("click", () => {
+            if (slidesData[index]) {
+              showSlide(index);
+            }
+          });
+        });
+
+        // 5. Initialize the slider to the first slide
+        showSlide(0);
       }
 
-      // Update the text
-      aboutText.textContent = slideData.text;
-      materialText.textContent = slideData.material;
-      
-      // Update the 'active' class on thumbnails
-      thumbnails.forEach((thumb) => thumb.classList.remove("active"));
-      thumbnails[index].classList.add("active");
-    }
+      // --- ALL YOUR SLIDER DATA GOES HERE ---
 
-    // 4. Attach event listeners
-    leftArrow.addEventListener("click", () => {
-      let newIndex = (currentIndex - 1 + slidesData.length) % slidesData.length;
-      showSlide(newIndex);
-    });
+      // UPDATED: Data for the first slider
 
-    rightArrow.addEventListener("click", () => {
-      let newIndex = (currentIndex + 1) % slidesData.length;
-      showSlide(newIndex);
-    });
+      // Data for the second slider (YOU MUST FILL THIS IN)
+      const slider1Data = [
+        {
+          img: "./assets/img/The Weight of Ashes/slider 1/1.jpg",
+          text: "Size: 20’’ x 12’’ x 3’’ inches, 15’’ x 15’’ x 3’’",
+          material: "Material: Concrete, transparent resin, and print on paper",
+          type: "image",
+        },
+        {
+          img: "./assets/img/The Weight of Ashes/slider 1/2.jpg",
+          text: "Size: 20’’ x 12’’ x 3’’",
+          material: "Material: Concrete, transparent resin, and print on paper",
+          type: "image",
+        },
+        {
+          img: "./assets/img/The Weight of Ashes/slider 1/3.jpg",
+          text: "Size: 20’’ x 12’’ x 3’’",
+          material: "Material: Concrete, transparent resin, and print on paper",
+          type: "image",
+        },
+        {
+          img: "./assets/img/The Weight of Ashes/slider 1/4.jpg",
+          text: "Size: 15’’ x 15’’ x 3’’",
+          material: "Material: Concrete, transparent resin, and print on paper",
+          type: "image",
+        },
+      ];
 
-    thumbnails.forEach((thumb, index) => {
-      thumb.addEventListener("click", () => {
-        if (slidesData[index]) {
-          showSlide(index);
+      const slider2Data = [
+        {
+          img: "./assets/img/The Weight of Ashes/sldier 2/1.jpg",
+          text: "Size: 11.5x5.3x1.5 inches,   11.5x5.3x1.5 inches,  14x5 3x1.5 inches",
+          material:
+            "Material: wood, transparent resin, paper collage, stainless steel and acrylic colours",
+          type: "image",
+        },
+        {
+          img: "./assets/img/The Weight of Ashes/sldier 2/2.jpg",
+          text: "Size: 11.5x5.3x1.5 inches",
+          material: "",
+          type: "image",
+        },
+        {
+          img: "./assets/img/The Weight of Ashes/sldier 2/3.jpg",
+          text: "Size: 11.5x5.3x1.5 inches",
+          material: "",
+          type: "image",
+        },
+        {
+          img: "./assets/img/The Weight of Ashes/sldier 2/4.jpg",
+          text: "Size: 14x5 3x1.5 inches",
+          material: "",
+          type: "image",
+        },
+      ];
+
+      const slider3Data = [
+        {
+          img: "./assets/img/The Weight of Ashes/slider 3/1.jpg",
+          text: "Size: 120 × 120 × 120",
+          material:
+            "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
+          type: "image",
+        },
+        {
+          img: "./assets/img/The Weight of Ashes/slider 3/2.jpg",
+          text: "Size: 120 × 120 × 120",
+          material:
+            "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
+          type: "image",
+        },
+        {
+          img: "./assets/img/The Weight of Ashes/slider 3/3.jpg",
+          text: "Size: 120 × 120 × 120",
+          material:
+            "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
+          type: "image",
+        },
+        {
+          img: "./assets/img/The Weight of Ashes/slider 3/4.jpg",
+          text: "Size: 120 × 120 × 120",
+          material:
+            "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
+          type: "image",
+        },
+        {
+          img: "./assets/img/The Weight of Ashes/slider 3/5.jpg",
+          text: "Size: 120 × 120 × 120",
+          material:
+            "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
+          type: "image",
+        },
+        {
+          img: "./assets/img/The Weight of Ashes/slider 3/6.jpg",
+          text: "Size: 120 × 120 × 120",
+          material:
+            "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
+          type: "image",
+        },
+        {
+          img: "./assets/img/The Weight of Ashes/slider 3/7.jpg",
+          text: "Size: 120 × 120 × 120",
+          material:
+            "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
+          type: "image",
+        },
+        {
+          img: "./assets/img/The Weight of Ashes/slider 3/8.jpg",
+          text: "Size: 120 × 120 × 120",
+          material:
+            "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
+          type: "image",
+        },
+        //       {
+        //         img: "./assets/img/The Weight of Ashes/slider 3/9.jpg",
+        //         text: "Size: 120 × 120 × 120",
+        //         material: "Material: Marble, sandstone, and ink-and-milk throwing mechanisme",
+        //         type: "image",
+        //       },
+        {
+          // NEW: Video slide data
+          img: null, // No image src
+          text: "Size: 120 × 120 × 120", // Custom text
+          material:
+            "Material: Marble, sandstone, and ink-and-milk throwing mechanisme",
+          type: "video", // Special type
+        },
+      ];
+
+      // --- INITIALIZE ALL SLIDERS WHEN THE PAGE LOADS ---
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize slider 1
+        initializeSlider("slider1", slider1Data); // Initialize slider 2
+        if (document.getElementById("slider2")) {
+          initializeSlider("slider2", slider2Data);
+        } // Initialize slider 3
+
+        if (document.getElementById("slider3")) {
+          initializeSlider("slider3", slider3Data);
+        } // Initialize slider 4
+
+        if (document.getElementById("slider4")) {
+          initializeSlider("slider4", slider4Data);
+        } // Initialize slider 5
+
+        if (document.getElementById("slider5")) {
+          initializeSlider("slider5", slider5Data);
+        } // Initialize slider 6
+
+        if (document.getElementById("slider6")) {
+          initializeSlider("slider6", slider6Data);
+        } // Initialize slider 7
+
+        if (document.getElementById("slider7")) {
+          initializeSlider("slider7", slider7Data);
+        } // Initialize slider 8
+
+        if (document.getElementById("slider8")) {
+          initializeSlider("slider8", slider8Data);
         }
       });
-    });
-
-    // 5. Initialize the slider to the first slide
-    showSlide(0);
-  }
-
-  // --- ALL YOUR SLIDER DATA GOES HERE ---
-
-  // UPDATED: Data for the first slider
-  
-
-  // Data for the second slider (YOU MUST FILL THIS IN)
-  const slider1Data = [
-    {
-      img: "./assets/img/The Weight of Ashes/slider 1/1.jpg",
-      text: "Size: 20’’ x 12’’ x 3’’ inches, 15’’ x 15’’ x 3’’",
-      material: "Material: Concrete, transparent resin, and print on paper",
-      type: "image",
-    },
-    {
-      img: "./assets/img/The Weight of Ashes/slider 1/2.jpg",
-      text: "Size: 20’’ x 12’’ x 3’’",
-      material: "Material: Concrete, transparent resin, and print on paper",
-      type: "image",
-    },
-    {
-      img: "./assets/img/The Weight of Ashes/slider 1/3.jpg",
-      text: "Size: 20’’ x 12’’ x 3’’",
-      material: "Material: Concrete, transparent resin, and print on paper",
-      type: "image",
-    },
-    {
-      img: "./assets/img/The Weight of Ashes/slider 1/4.jpg",
-      text: "Size: 15’’ x 15’’ x 3’’",
-      material: "Material: Concrete, transparent resin, and print on paper",
-      type: "image",
-    },
-  ];
-
-  const slider2Data = [
-    {
-      img: "./assets/img/The Weight of Ashes/sldier 2/1.jpg",
-      text: "Size: 11.5x5.3x1.5 inches,   11.5x5.3x1.5 inches,  14x5 3x1.5 inches",
-      material: "Material: wood, transparent resin, paper collage, stainless steel and acrylic colours",
-      type: "image",
-    },
-    {
-      img: "./assets/img/The Weight of Ashes/sldier 2/2.jpg",
-      text: "Size: 11.5x5.3x1.5 inches",
-      material: "",
-      type: "image",
-    },
-    {
-      img: "./assets/img/The Weight of Ashes/sldier 2/3.jpg",
-      text: "Size: 11.5x5.3x1.5 inches",
-      material: "",
-      type: "image",
-    },
-    {
-      img: "./assets/img/The Weight of Ashes/sldier 2/4.jpg",
-      text: "Size: 14x5 3x1.5 inches",
-      material: "",
-      type: "image",
-    },
-  ];
-
-  
-  const slider3Data = [
-      {
-        img: "./assets/img/The Weight of Ashes/slider 3/1.jpg",
-        text: "Size: 120 × 120 × 120",
-        material: "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
-        type: "image",
-      },
-      {
-        img: "./assets/img/The Weight of Ashes/slider 3/2.jpg",
-        text: "Size: 120 × 120 × 120",
-        material: "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
-        type: "image",
-      },
-      {
-        img: "./assets/img/The Weight of Ashes/slider 3/3.jpg",
-        text: "Size: 120 × 120 × 120",
-        material: "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
-        type: "image",
-      },
-      {
-        img: "./assets/img/The Weight of Ashes/slider 3/4.jpg",
-        text: "Size: 120 × 120 × 120",
-        material: "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
-        type: "image",
-      },
-      {
-        img: "./assets/img/The Weight of Ashes/slider 3/5.jpg",
-        text: "Size: 120 × 120 × 120",
-        material: "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
-        type: "image",
-      },
-      {
-        img: "./assets/img/The Weight of Ashes/slider 3/6.jpg",
-        text: "Size: 120 × 120 × 120",
-        material: "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
-        type: "image",
-      },
-      {
-        img: "./assets/img/The Weight of Ashes/slider 3/7.jpg",
-        text: "Size: 120 × 120 × 120",
-        material: "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
-        type: "image",
-      },
-      {
-        img: "./assets/img/The Weight of Ashes/slider 3/8.jpg",
-        text: "Size: 120 × 120 × 120",
-        material: "Material: Marble, sandstone, and ink-and-milk throwing mechanism",
-        type: "image",
-      },
-//       {
-//         img: "./assets/img/The Weight of Ashes/slider 3/9.jpg",
-//         text: "Size: 120 × 120 × 120",
-//         material: "Material: Marble, sandstone, and ink-and-milk throwing mechanisme",
-//         type: "image",
-//       },
-    {
-      // NEW: Video slide data
-      img: null, // No image src
-      text: "Size: 120 × 120 × 120", // Custom text
-      material: "Material: Marble, sandstone, and ink-and-milk throwing mechanisme",
-      type: "video", // Special type
-    },
-    ];
-  
-  
-
-  // --- INITIALIZE ALL SLIDERS WHEN THE PAGE LOADS ---
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    // Initialize slider 1
-    initializeSlider("slider1", slider1Data);
-    
-    // Initialize slider 2
-    if (document.getElementById("slider2")) {
-      initializeSlider("slider2", slider2Data);
-    }
-
-    // Initialize slider 3
-    if (document.getElementById("slider3")) {
-      initializeSlider("slider3", slider3Data);
-    }
-
-    // Initialize slider 4
-    if (document.getElementById("slider4")) {
-      initializeSlider("slider4", slider4Data);
-    }
-
-    // Initialize slider 5
-    if (document.getElementById("slider5")) {
-      initializeSlider("slider5", slider5Data);
-    }
-
-    // Initialize slider 6
-    if (document.getElementById("slider6")) {
-      initializeSlider("slider6", slider6Data);
-    }
-
-    // Initialize slider 7
-    if (document.getElementById("slider7")) {
-      initializeSlider("slider7", slider7Data);
-    }
-
-    // Initialize slider 8
-    if (document.getElementById("slider8")) {
-      initializeSlider("slider8", slider8Data);
-    }
-  });
-
-</script>
+    </script>
   </body>
 </html>

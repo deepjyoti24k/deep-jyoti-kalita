@@ -71,14 +71,14 @@
       }
 
       /* This makes the video have the same 90% width */
-.cmf-sl .slide-container iframe {
-  width: 90%;
-  aspect-ratio: 16 / 9; /* Gives it a 16:9 video shape */
-  height: auto;
-  vertical-align: middle;
-  margin-left: auto;
-  margin-right: auto;
-}
+      .cmf-sl .slide-container iframe {
+        width: 90%;
+        aspect-ratio: 16 / 9; /* Gives it a 16:9 video shape */
+        height: auto;
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       .cmf-sl .arrow {
         position: absolute;
@@ -98,9 +98,10 @@
         right: 0;
       }
       .cmf-sl .about {
-        margin-top: 10px;
-        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 0;
         color: #333;
+        line-height: 1.4;
       }
       .cmf-sl .thumbnails {
         display: flex;
@@ -146,9 +147,9 @@
           object-fit: cover;
         }
         /* ADD THIS RULE for the mobile video width */
-  .cmf-sl .slide-container iframe {
-    width: 85%;
-  }
+        .cmf-sl .slide-container iframe {
+          width: 85%;
+        }
         .cmf-sl .about {
           margin-top: 10px;
           font-size: 13px;
@@ -234,10 +235,9 @@
       <div class="mt-50">
         <div class="container">
           <div class="row g-4">
-
             <!-- Slider 1 start -->
             <div class="col-lg-12 column" id="slider1">
-              <div class="cmf-sl" >
+              <div class="cmf-sl">
                 <div class="slider">
                   <div class="slide-container">
                     <button class="arrow left">&#10094;</button>
@@ -248,15 +248,14 @@
                     />
 
                     <iframe
-          class="video-slide"
-          src="https://www.youtube.com/embed/ekIOOmCKnJY?rel=0&loop=1&playlist=ekIOOmCKnJY"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          style="display: none;"
-        ></iframe>
-
+                      class="video-slide"
+                      src="https://www.youtube.com/embed/ekIOOmCKnJY?rel=0&loop=1&playlist=ekIOOmCKnJY"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      style="display: none"
+                    ></iframe>
 
                     <button class="arrow right">&#10095;</button>
                   </div>
@@ -265,51 +264,29 @@
                     <h5>Signed and Erased</h5>
                   </div>
 
-                  <div class="about about-text">
-                    Size: 50 x 35 x 33 inches
-                  </div>
+                  <div class="about about-text">Size: 50 x 35 x 33 inches</div>
 
-                  <div class="about material-text" style="margin-top: 5px;">
-  Materials- Wood, Concrete, Electronic Motor with Programmed Arduino
-</div>
+                  <div class="about material-text" style="margin-top: 5px">
+                    Materials- Wood, Concrete, Electronic Motor with Programmed
+                    Arduino
+                  </div>
 
                   <div class="" style="color: #000">
                     <p>Year : 2023</p>
                   </div>
 
                   <div class="thumbnails" id="thumbnail-container">
+                    <img src="./assets/img/work-Slide-1.jpeg" class="active" />
+                    <img src="./assets/img/work-Slide-2.jpeg" />
+                    <img src="./assets/img/work-Slide-3.jpeg" />
+                    <img src="./assets/img/work-Slide-4.jpeg" />
+                    <img src="./assets/img/work-Slide-5.jpeg" />
+                    <img src="./assets/img/work-Slide-6.jpeg" />
+                    <img src="./assets/img/work-slide-7.jpg" />
                     <img
-                      src="./assets/img/work-Slide-1.jpeg"
-                      class="active"
+                      src="https://img.youtube.com/vi/ekIOOmCKnJY/0.jpg"
+                      alt="Video Thumbnail"
                     />
-                    <img
-                      src="./assets/img/work-Slide-2.jpeg"
-                      
-                    />
-                    <img
-                      src="./assets/img/work-Slide-3.jpeg"
-                      
-                    />
-                    <img
-                      src="./assets/img/work-Slide-4.jpeg"
-                     
-                    />
-                    <img
-                      src="./assets/img/work-Slide-5.jpeg"
-                     
-                    />
-                    <img
-                      src="./assets/img/work-Slide-6.jpeg"
-                      
-                    />
-                    <img
-                      src="./assets/img/work-slide-7.jpg"
-                      
-                    />
-                    <img
-          src="https://img.youtube.com/vi/ekIOOmCKnJY/0.jpg"
-          alt="Video Thumbnail"
-        />
                   </div>
                 </div>
               </div>
@@ -317,280 +294,345 @@
 
             <!-- second slider  -->
             <div id="slider2" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-        <img
-          class="main-image" 
-          src="./assets/img/A MURMUR BENEATH tHE DUST/second-slider/1.jpg" alt="Slide"
-        />
-        <button class="arrow right">&#10095;</button>
-      </div>
+                    <img
+                      class="main-image"
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/second-slider/1.jpg"
+                      alt="Slide"
+                    />
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Rephrased Eching of Rear Mirror</h5> </div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Rephrased Eching of Rear Mirror</h5>
+                  </div>
 
-      <div class="about about-text">Size: 15 x 10 x 1.5 inches</div>
+                  <div class="about about-text">Size: 15 x 10 x 1.5 inches</div>
 
-      <div class="about material-text">Material: Rusted Iron and Concrete, Concrete & Iron, and Acrylic Paint</div>
+                  <div class="about material-text">
+                    Material: Rusted Iron and Concrete, Concrete & Iron, and
+                    Acrylic Paint
+                  </div>
 
-      <div class="" style="color: #000"><p>Year : 2024</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/second-slider/1.jpg" class="active"
-        />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/second-slider/2.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/second-slider/3.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/second-slider/4.jpg" />
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="" style="color: #000"><p>Year : 2024</p></div>
 
-<!-- slider 3 -->
-<div id="slider3" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/second-slider/1.jpg"
+                      class="active"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/second-slider/2.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/second-slider/3.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/second-slider/4.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <img
-          class="main-image" 
-          src="./assets/img/A MURMUR BENEATH tHE DUST/third-slider/1.jpg" alt="Slide"
-        />
-        <button class="arrow right">&#10095;</button>
-      </div>
+            <!-- slider 3 -->
+            <div id="slider3" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Scaling Course of Power</h5> </div>
+                    <img
+                      class="main-image"
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/third-slider/1.jpg"
+                      alt="Slide"
+                    />
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-      <div class="about about-text">Sizes: 18 x 12 x 2 inches, 19 x 12 x 2 inches, 11 x 9 x 2 inches, 18 x 3 x 2.5 inches</div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Scaling Course of Power</h5>
+                  </div>
 
-        <div class="about material-text">Materials: Concrete, Epoxy, Wood, and Printed Paper</div>
+                  <div class="about about-text">
+                    Sizes: 18 x 12 x 2 inches, 19 x 12 x 2 inches, 11 x 9 x 2
+                    inches, 18 x 3 x 2.5 inches
+                  </div>
 
-        <div class="" style="color: #000"><p>Year : 2024</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/third-slider/1.jpg"  class="active"/>
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/third-slider/2.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/third-slider/3.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/third-slider/4.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/third-slider/5.jpg" />
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="about material-text">
+                    Materials: Concrete, Epoxy, Wood, and Printed Paper
+                  </div>
 
-<!-- Slider 4 -->
-<div id="slider4" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="" style="color: #000"><p>Year : 2024</p></div>
 
-        <img
-          class="main-image" 
-          src="./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/1.jpg" alt="Slide"
-        />
-        <iframe
-    class="video-slide"
-    src="https://www.youtube.com/embed/XoGqpdFdrFA?rel=0&loop=1&playlist=XoGqpdFdrFA"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-    style="display: none;"
-  ></iframe>
-        <button class="arrow right">&#10095;</button>
-      </div>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/third-slider/1.jpg"
+                      class="active"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/third-slider/2.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/third-slider/3.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/third-slider/4.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/third-slider/5.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Whispers Beneath the Hill</h5> </div>
+            <!-- Slider 4 -->
+            <div id="slider4" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-      <div class="about about-text">Size: (21 x 24 x 5)inches (61 x 7 x 20)inches</div>
+                    <img
+                      class="main-image"
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/1.jpg"
+                      alt="Slide"
+                    />
+                    <iframe
+                      class="video-slide"
+                      src="https://www.youtube.com/embed/XoGqpdFdrFA?rel=0&loop=1&playlist=XoGqpdFdrFA"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      style="display: none"
+                    ></iframe>
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-        <div class="about material-text">Materials: Wood, Brick Dust, Epoxy, Print on Paper, and Motors</div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Whispers Beneath the Hill</h5>
+                  </div>
 
-        <div class="" style="color: #000"><p>Year : 2024</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/1.jpg" class="active"
-        />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/2.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/3.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/4.jpg" />
-          <img
-          src="https://img.youtube.com/vi/XoGqpdFdrFA/0.jpg"
-          alt="Video Thumbnail"
-        />
-        </div>
-    </div>
-  </div>
-</div>
-<!-- Slider 5 -->
-<div id="slider5" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="about about-text">
+                    Size: (21 x 24 x 5)inches (61 x 7 x 20)inches
+                  </div>
 
-        <img
-          class="main-image" 
-          src="./assets/img/A MURMUR BENEATH tHE DUST/fifth-slider/1.jpg" alt="Slide"
-        />
-        <button class="arrow right">&#10095;</button>
-      </div>
+                  <div class="about material-text">
+                    Materials: Wood, Brick Dust, Epoxy, Print on Paper, and
+                    Motors
+                  </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Melting Fields</h5> </div>
+                  <div class="" style="color: #000"><p>Year : 2024</p></div>
 
-      <div class="about about-text">Size: 16 x 36 inch</div>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/1.jpg"
+                      class="active"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/2.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/3.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/4.jpg"
+                    />
+                    <img
+                      src="https://img.youtube.com/vi/XoGqpdFdrFA/0.jpg"
+                      alt="Video Thumbnail"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slider 5 -->
+            <div id="slider5" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-        <div class="about material-text">Material: tarcoal and rice grain</div>
+                    <img
+                      class="main-image"
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/fifth-slider/1.jpg"
+                      alt="Slide"
+                    />
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-        <div class="" style="color: #000"><p>Year : 2024</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/fifth-slider/1.jpg" class="active"
-        />
-        
-        </div>
-    </div>
-  </div>
-</div>
-<!-- Slider 6 -->
-<div id="slider6" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Melting Fields</h5>
+                  </div>
 
-        <img
-          class="main-image" 
-          src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/1.jpg" alt="Slide"
-        />
-        <button class="arrow right">&#10095;</button>
-      </div>
+                  <div class="about about-text">Size: 16 x 36 inch</div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Ashes Behind the Barrier</h5> </div>
+                  <div class="about material-text">
+                    Material: tarcoal and rice grain
+                  </div>
 
-      <div class="about about-text">Size: 360 x 3 x 5.5 inches</div>
+                  <div class="" style="color: #000"><p>Year : 2024</p></div>
 
-        <div class="about material-text">Materials: Concrete, Glass, Transparent Print, and Iron Structure</div>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/fifth-slider/1.jpg"
+                      class="active"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slider 6 -->
+            <div id="slider6" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-        <div class="" style="color: #000"><p>Year : 2024</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/1.jpg" class="active"
-        />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/2.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/3.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/4.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/5.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/6.jpg" />
-        </div>
-    </div>
-  </div>
-</div>
-<!-- Slider 7 -->
-<div id="slider7" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                    <img
+                      class="main-image"
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/1.jpg"
+                      alt="Slide"
+                    />
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-        <img
-          class="main-image" 
-          src="./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/1.jpg" alt="Slide"
-        />
-        <button class="arrow right">&#10095;</button>
-      </div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Ashes Behind the Barrier</h5>
+                  </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>The Pillar</h5> </div>
+                  <div class="about about-text">Size: 360 x 3 x 5.5 inches</div>
 
-      <div class="about about-text"></div>
+                  <div class="about material-text">
+                    Materials: Concrete, Glass, Transparent Print, and Iron
+                    Structure
+                  </div>
 
-        <div class="about material-text"></div>
+                  <div class="" style="color: #000"><p>Year : 2024</p></div>
 
-        <div class="" style="color: #000"><p>Year : 2024</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/1.jpg" class="active"
-        />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/2.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/3.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/4.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/5.jpg" />
-        </div>
-    </div>
-  </div>
-</div>
-<!-- Slider 8 -->
-<div id="slider8" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/1.jpg"
+                      class="active"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/2.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/3.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/4.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/5.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/6.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slider 7 -->
+            <div id="slider7" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-        <img
-          class="main-image" 
-          src="./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/1.jpg" alt="Slide"
-        />
-        <button class="arrow right">&#10095;</button>
-      </div>
+                    <img
+                      class="main-image"
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/1.jpg"
+                      alt="Slide"
+                    />
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>The Memory of Sweet</h5> </div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>The Pillar</h5>
+                  </div>
 
-      <div class="about about-text">Size: 11.7 x 16.5 inches</div>
+                  <div class="about about-text">Size: 8.5 x 72 inches</div>
 
-        <div class="about material-text">Material: Cloth with Sweat Stain Print</div>
+                  <div class="about material-text">
+                    Materials: Concrete, Epoxy , and Paper
+                  </div>
 
-        <div class="" style="color: #000"><p>Year : 2024</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/1.jpg" class="active"
-        />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/2.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/3.jpg" />
-        <img
-          src="./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/4.jpg" />
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="" style="color: #000"><p>Year : 2024</p></div>
+
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/1.jpg"
+                      class="active"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/2.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/3.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/4.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/5.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slider 8 -->
+            <div id="slider8" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
+
+                    <img
+                      class="main-image"
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/1.jpg"
+                      alt="Slide"
+                    />
+                    <button class="arrow right">&#10095;</button>
+                  </div>
+
+                  <div class="" style="margin-top: 10px">
+                    <h5>The Memory of Sweet</h5>
+                  </div>
+
+                  <div class="about about-text">Size: 11.7 x 16.5 inches</div>
+
+                  <div class="about material-text">
+                    Material: Cloth with Sweat Stain Print
+                  </div>
+
+                  <div class="" style="color: #000"><p>Year : 2024</p></div>
+
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/1.jpg"
+                      class="active"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/2.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/3.jpg"
+                    />
+                    <img
+                      src="./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/4.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -616,387 +658,394 @@
     <script src="./assets/js/countdown.min.js"></script>
     <script src="./assets/js/main.js"></script>
 
-    
-     <script>
-  /**
-   * This function initializes a single, independent slider.
-   * @param {string} sliderId - The ID of the main wrapper (e.g., "slider1").
-   * @param {Array<Object>} slidesData - An array of objects with data for this slider.
-   */
-  function initializeSlider(sliderId, slidesData) {
-    // 1. Find the wrapper element
-    const slider = document.getElementById(sliderId);
-    
-    // 2. Find all elements for this slider
-    const mainImage = slider.querySelector(".main-image");
-    const aboutText = slider.querySelector(".about-text");
-    const materialText = slider.querySelector(".material-text");
-    const thumbnails = slider.querySelectorAll(".thumbnails img");
-    const leftArrow = slider.querySelector(".arrow.left");
-    const rightArrow = slider.querySelector(".arrow.right");
+    <script>
+      /**
+       * This function initializes a single, independent slider.
+       * @param {string} sliderId - The ID of the main wrapper (e.g., "slider1").
+       * @param {Array<Object>} slidesData - An array of objects with data for this slider.
+       */
+      function initializeSlider(sliderId, slidesData) {
+        // 1. Find the wrapper element
+        const slider = document.getElementById(sliderId);
 
-    // NEW: Find the video slide
-    const videoSlide = slider.querySelector(".video-slide");
-    // NEW: Store the original video src to pause it later
-    const videoSrc = videoSlide ? videoSlide.src : null;
+        // 2. Find all elements for this slider
+        const mainImage = slider.querySelector(".main-image");
+        const aboutText = slider.querySelector(".about-text");
+        const materialText = slider.querySelector(".material-text");
+        const thumbnails = slider.querySelectorAll(".thumbnails img");
+        const leftArrow = slider.querySelector(".arrow.left");
+        const rightArrow = slider.querySelector(".arrow.right");
 
-    let currentIndex = 0;
+        // NEW: Find the video slide
+        const videoSlide = slider.querySelector(".video-slide");
+        // NEW: Store the original video src to pause it later
+        const videoSrc = videoSlide ? videoSlide.src : null;
 
-    // 3. Define the function to show a slide
-    function showSlide(index) {
-      currentIndex = index;
-      const slideData = slidesData[index];
+        let currentIndex = 0;
 
-      // NEW LOGIC:
-      if (slideData.type === "video") {
-        // --- This is the VIDEO slide ---
-        mainImage.style.display = "none"; // Hide image
-        
-        // Set the video src back (this will load/reload it)
-        videoSlide.src = videoSrc; 
-        videoSlide.style.display = "block"; // Show video
-        
-      } else {
-        // --- This is an IMAGE slide ---
-        if (videoSlide) {
-          videoSlide.style.display = "none"; // Hide video
-          
-          // Set src to 'about:blank' to completely stop the video
-          // This prevents background reloading and Error 153
-          videoSlide.src = "about:blank"; 
+        // 3. Define the function to show a slide
+        function showSlide(index) {
+          currentIndex = index;
+          const slideData = slidesData[index];
+
+          // NEW LOGIC:
+          if (slideData.type === "video") {
+            // --- This is the VIDEO slide ---
+            mainImage.style.display = "none"; // Hide image
+
+            // Set the video src back (this will load/reload it)
+            videoSlide.src = videoSrc;
+            videoSlide.style.display = "block"; // Show video
+          } else {
+            // --- This is an IMAGE slide ---
+            if (videoSlide) {
+              videoSlide.style.display = "none"; // Hide video
+
+              // Set src to 'about:blank' to completely stop the video
+              // This prevents background reloading and Error 153
+              videoSlide.src = "about:blank";
+            }
+            mainImage.style.display = "block"; // Show image
+            mainImage.src = slideData.img; // Set image src
+          }
+
+          // Update the text
+          aboutText.textContent = slideData.text;
+          materialText.textContent = slideData.material;
+
+          // Update the 'active' class on thumbnails
+          thumbnails.forEach((thumb) => thumb.classList.remove("active"));
+          thumbnails[index].classList.add("active");
         }
-        mainImage.style.display = "block"; // Show image
-        mainImage.src = slideData.img; // Set image src
+
+        // 4. Attach event listeners
+        leftArrow.addEventListener("click", () => {
+          let newIndex =
+            (currentIndex - 1 + slidesData.length) % slidesData.length;
+          showSlide(newIndex);
+        });
+
+        rightArrow.addEventListener("click", () => {
+          let newIndex = (currentIndex + 1) % slidesData.length;
+          showSlide(newIndex);
+        });
+
+        thumbnails.forEach((thumb, index) => {
+          thumb.addEventListener("click", () => {
+            if (slidesData[index]) {
+              showSlide(index);
+            }
+          });
+        });
+
+        // 5. Initialize the slider to the first slide
+        showSlide(0);
       }
 
-      // Update the text
-      aboutText.textContent = slideData.text;
-      materialText.textContent = slideData.material;
-      
-      // Update the 'active' class on thumbnails
-      thumbnails.forEach((thumb) => thumb.classList.remove("active"));
-      thumbnails[index].classList.add("active");
-    }
+      // --- ALL YOUR SLIDER DATA GOES HERE ---
 
-    // 4. Attach event listeners
-    leftArrow.addEventListener("click", () => {
-      let newIndex = (currentIndex - 1 + slidesData.length) % slidesData.length;
-      showSlide(newIndex);
-    });
+      // UPDATED: Data for the first slider
+      const slider1Data = [
+        {
+          img: "./assets/img/work-Slide-1.jpeg",
+          text: "Size: 50 x 35 x 33 inches",
+          material:
+            "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
+          type: "image",
+        },
+        {
+          img: "./assets/img/work-Slide-2.jpeg",
+          text: "Size: 50 x 35 x 33 inches",
+          material:
+            "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
+          type: "image",
+        },
+        {
+          img: "./assets/img/work-Slide-3.jpeg",
+          text: "Size: 50 x 35 x 33 inches",
+          material:
+            "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
+          type: "image",
+        },
+        {
+          img: "./assets/img/work-Slide-4.jpeg",
+          text: "Size: 50 x 35 x 33 inches",
+          material:
+            "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
+          type: "image",
+        },
+        {
+          img: "./assets/img/work-Slide-5.jpeg",
+          text: "Size: 50 x 35 x 33 inches",
+          material:
+            "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
+          type: "image",
+        },
+        {
+          img: "./assets/img/work-Slide-6.jpeg",
+          text: "Size: 50 x 35 x 33 inches",
+          material:
+            "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
+          type: "image",
+        },
+        {
+          img: "./assets/img/work-Slide-7.jpg",
+          text: "Size: 50 x 35 x 33 inches",
+          material:
+            "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
+          type: "image",
+        },
+        {
+          // NEW: Video slide data
+          img: null, // No image src
+          text: "Video: A MURMUR BENEATH THE DUST", // Custom text
+          material: "Video Installation",
+          type: "video", // Special type
+        },
+      ];
 
-    rightArrow.addEventListener("click", () => {
-      let newIndex = (currentIndex + 1) % slidesData.length;
-      showSlide(newIndex);
-    });
+      // Data for the second slider (YOU MUST FILL THIS IN)
+      const slider2Data = [
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/second-slider/1.jpg",
+          text: "Size: 15 x 10 x 1.5 inches, 11 x 9.5 x 1.5 inches",
+          material:
+            "Material: Rusted Iron and Concrete, Concrete &  Iron, and Acrylic Paint",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/second-slider/2.jpg",
+          text: "Size: 15 x 10 x 1.5 inches",
+          material: "Material: Rusted Iron and Concrete",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/second-slider/3.jpg",
+          text: "Size: 15 x 10 x 1.5 inches",
+          material: "Material: Rusted Iron and Concrete",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/second-slider/4.jpg",
+          text: "Size: 11 x 9.5 x 1.5 inches",
+          material: "Material: Concrete, Iron, and Acrylic Paint",
+          type: "image",
+        },
+      ];
 
-    thumbnails.forEach((thumb, index) => {
-      thumb.addEventListener("click", () => {
-        if (slidesData[index]) {
-          showSlide(index);
+      const slider3Data = [
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/third-slider/1.jpg",
+          text: "Sizes: 18 x 12 x 2 inches, 19 x 12 x 2 inches, 11 x 9 x 2 inches, 18 x 3 x 2.5 inches",
+          material: "Materials: Concrete, Epoxy, Wood, and Printed Paper",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/third-slider/2.jpg",
+          text: "Sizes: 18 x 12 x 2 inches",
+          material: "Materials: Concrete, Epoxy, Wood, and Printed Paper",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/third-slider/3.jpg",
+          text: "Sizes: 19 x 12 x 2 inches",
+          material: "Materials: Concrete, Epoxy, Wood, and Printed Paper",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/third-slider/4.jpg",
+          text: "Sizes: 11 x 9 x 2 inches",
+          material: "Materials: Concrete, Epoxy, Wood, and Printed Paper",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/third-slider/5.jpg",
+          text: "Size: 18 x 3 x 2.5 inches",
+          material: "Materials: Concrete, Epoxy, Wood, and Printed Paper",
+          type: "image",
+        },
+      ];
+
+      const slider4Data = [
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/1.jpg",
+          text: "Size: (21 x 24 x 5)inches (61 x 7 x 20)inches",
+          material:
+            "Materials: Wood, Brick Dust, Epoxy, Print on Paper, and Motors",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/2.jpg",
+          text: "Size: 21 x 24 x 5 inches",
+          material:
+            "Materials: Wood, Brick Dust, Epoxy, Print on Paper, and Motors",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/3.jpg",
+          text: "Size: 61 x 7 x 20 inches",
+          material:
+            "Materials: Wood, Brick Dust, Epoxy, Print on Paper, and Motors",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/4.jpg",
+          text: "Size: 21 x 24 x 5 inches",
+          material:
+            "Materials: Wood, Brick Dust, Epoxy, Print on Paper, and Motors",
+          type: "image",
+        },
+        {
+          // NEW: Video slide data
+          img: null, // No image src
+          text: "Video: Title of your video", // Custom text
+          material: "Video Installation",
+          type: "video", // Special type
+        },
+      ];
+      const slider5Data = [
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/fifth-slider/1.jpg",
+          text: "16 x 36 inch",
+          material: "Material: tarcoal and rice grain",
+          type: "image",
+        },
+      ];
+      const slider6Data = [
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/1.jpg",
+          text: "Size: 24 x 3 x 5.5 inches",
+          material:
+            "Materials: Concrete, Glass, Transparent Print, and Iron Structure",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/2.jpg",
+          text: "Size: 24 x 3 x 5.5 inches",
+          material:
+            "Materials: Concrete, Glass, Transparent Print, and Iron Structure",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/3.jpg",
+          text: "Size: 24 x 3 x 5.5 inches",
+          material:
+            "Materials: Concrete, Glass, Transparent Print, and Iron Structure",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/4.jpg",
+          text: "Size: 24 x 3 x 5.5 inches",
+          material:
+            "Materials: Concrete, Glass, Transparent Print, and Iron Structure",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/5.jpg",
+          text: "Size: 24 x 3 x 5.5 inches",
+          material:
+            "Materials: Concrete, Glass, Transparent Print, and Iron Structure",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/6.jpg",
+          text: "Size: 24 x 3 x 5.5 inches",
+          material:
+            "Materials: Concrete, Glass, Transparent Print, and Iron Structure",
+          type: "image",
+        },
+      ];
+      const slider7Data = [
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/1.jpg",
+          text: "Size: 8.5 x 72 inches",
+          material: "Materials: Concrete, Epoxy , and Paper",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/2.jpg",
+          text: "Size: 8.5 x 72 inches",
+          material: "Materials: Concrete, Epoxy , and Paper",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/3.jpg",
+          text: "Size: 8.5 x 72 inches",
+          material: "Materials: Concrete, Epoxy , and Paper",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/4.jpg",
+          text: "Size: 8.5 x 72 inches",
+          material: "Materials: Concrete, Epoxy , and Paper",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/5.jpg",
+          text: "Size: 8.5 x 72 inches",
+          material: "Materials: Concrete, Epoxy , and Paper",
+          type: "image",
+        },
+      ];
+      const slider8Data = [
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/1.jpg",
+          text: "Size: 11.7 x 16.5 inches",
+          material: "Material: Cloth with Sweat Stain Print",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/2.jpg",
+          text: "Size: 11.7 x 16.5 inches",
+          material: "Material: Cloth with Sweat Stain Print",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/3.jpg",
+          text: "Size: 11.7 x 16.5 inches",
+          material: "Material: Cloth with Sweat Stain Print",
+          type: "image",
+        },
+        {
+          img: "./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/4.jpg",
+          text: "Size: 11.7 x 16.5 inches",
+          material: "Material: Cloth with Sweat Stain Print",
+          type: "image",
+        },
+      ];
+
+      // --- INITIALIZE ALL SLIDERS WHEN THE PAGE LOADS ---
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize slider 1
+        initializeSlider("slider1", slider1Data); // Initialize slider 2
+        if (document.getElementById("slider2")) {
+          initializeSlider("slider2", slider2Data);
+        } // Initialize slider 3
+
+        if (document.getElementById("slider3")) {
+          initializeSlider("slider3", slider3Data);
+        } // Initialize slider 4
+
+        if (document.getElementById("slider4")) {
+          initializeSlider("slider4", slider4Data);
+        } // Initialize slider 5
+
+        if (document.getElementById("slider5")) {
+          initializeSlider("slider5", slider5Data);
+        } // Initialize slider 6
+
+        if (document.getElementById("slider6")) {
+          initializeSlider("slider6", slider6Data);
+        } // Initialize slider 7
+
+        if (document.getElementById("slider7")) {
+          initializeSlider("slider7", slider7Data);
+        } // Initialize slider 8
+
+        if (document.getElementById("slider8")) {
+          initializeSlider("slider8", slider8Data);
         }
       });
-    });
-
-    // 5. Initialize the slider to the first slide
-    showSlide(0);
-  }
-
-  // --- ALL YOUR SLIDER DATA GOES HERE ---
-
-  // UPDATED: Data for the first slider
-  const slider1Data = [
-    {
-      img: "./assets/img/work-Slide-1.jpeg",
-      text: "Size: 50 x 35 x 33 inches",
-      material: "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
-      type: "image",
-    },
-    {
-      img: "./assets/img/work-Slide-2.jpeg",
-      text: "Size: 50 x 35 x 33 inches",
-      material: "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
-      type: "image",
-    },
-    {
-      img: "./assets/img/work-Slide-3.jpeg",
-      text: "Size: 50 x 35 x 33 inches",
-      material: "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
-      type: "image",
-    },
-    {
-      img: "./assets/img/work-Slide-4.jpeg",
-      text: "Size: 50 x 35 x 33 inches",
-      material: "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
-      type: "image",
-    },
-    {
-      img: "./assets/img/work-Slide-5.jpeg",
-      text: "Size: 50 x 35 x 33 inches",
-      material: "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
-      type: "image",
-    },
-    {
-      img: "./assets/img/work-Slide-6.jpeg",
-      text: "Size: 50 x 35 x 33 inches",
-      material: "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
-      type: "image",
-    },
-    {
-      img: "./assets/img/work-Slide-7.jpg",
-      text: "Size: 50 x 35 x 33 inches",
-      material: "Materials: Wood, Concrete, Electronic Motor with Programmed Arduino",
-      type: "image",
-    },
-    {
-      // NEW: Video slide data
-      img: null, // No image src
-      text: "Video: A MURMUR BENEATH THE DUST", // Custom text
-      material: "Video Installation",
-      type: "video", // Special type
-    },
-  ];
-
-  // Data for the second slider (YOU MUST FILL THIS IN)
-  const slider2Data = [
-    {
-      img: "./assets/img/A MURMUR BENEATH tHE DUST/second-slider/1.jpg",
-      text: "Size: 15 x 10 x 1.5 inches, 11 x 9.5 x 1.5 inches",
-      material: "Material: Rusted Iron and Concrete, Concrete &  Iron, and Acrylic Paint",
-      type: "image",
-    },
-    {
-      img: "./assets/img/A MURMUR BENEATH tHE DUST/second-slider/2.jpg",
-      text: "Size: 15 x 10 x 1.5 inches",
-      material: "Material: Rusted Iron and Concrete",
-      type: "image",
-    },
-    {
-      img: "./assets/img/A MURMUR BENEATH tHE DUST/second-slider/3.jpg",
-      text: "Size: 15 x 10 x 1.5 inches",
-      material: "Material: Rusted Iron and Concrete",
-      type: "image",
-    },
-    {
-      img: "./assets/img/A MURMUR BENEATH tHE DUST/second-slider/4.jpg",
-      text: "Size: 11 x 9.5 x 1.5 inches",
-      material: "Material: Concrete, Iron, and Acrylic Paint",
-      type: "image",
-    },
-  ];
-
-  const slider3Data = [
-    {
-      img: "./assets/img/A MURMUR BENEATH tHE DUST/third-slider/1.jpg",
-      text: "Sizes: 18 x 12 x 2 inches, 19 x 12 x 2 inches, 11 x 9 x 2 inches, 18 x 3 x 2.5 inches",
-      material: "Materials: Concrete, Epoxy, Wood, and Printed Paper",
-      type: "image",
-    },
-    {
-      img: "./assets/img/A MURMUR BENEATH tHE DUST/third-slider/2.jpg",
-      text: "Sizes: 18 x 12 x 2 inches",
-      material: "Materials: Concrete, Epoxy, Wood, and Printed Paper",
-      type: "image",
-    },
-    {
-      img: "./assets/img/A MURMUR BENEATH tHE DUST/third-slider/3.jpg",
-      text: "Sizes: 19 x 12 x 2 inches",
-      material: "Materials: Concrete, Epoxy, Wood, and Printed Paper",
-      type: "image",
-    },
-    {
-      img: "./assets/img/A MURMUR BENEATH tHE DUST/third-slider/4.jpg",
-      text: "Sizes: 11 x 9 x 2 inches",
-      material: "Materials: Concrete, Epoxy, Wood, and Printed Paper",
-      type: "image",
-    },
-    {
-      img: "./assets/img/A MURMUR BENEATH tHE DUST/third-slider/5.jpg",
-      text: "Size: 18 x 3 x 2.5 inches",
-      material: "Materials: Concrete, Epoxy, Wood, and Printed Paper",
-      type: "image",
-    },
-  ];
-
-  const slider4Data = [
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/1.jpg",
-        text: "Size: (21 x 24 x 5)inches (61 x 7 x 20)inches",
-        material: "Materials: Wood, Brick Dust, Epoxy, Print on Paper, and Motors",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/2.jpg",
-        text: "Size: 21 x 24 x 5 inches",
-        material: "Materials: Wood, Brick Dust, Epoxy, Print on Paper, and Motors",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/3.jpg",
-        text: "Size: 61 x 7 x 20 inches",
-        material: "Materials: Wood, Brick Dust, Epoxy, Print on Paper, and Motors",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/fourth-slider/4.jpg",
-        text: "Size: 21 x 24 x 5 inches",
-        material: "Materials: Wood, Brick Dust, Epoxy, Print on Paper, and Motors",
-        type: "image",
-      },
-      {
-      // NEW: Video slide data
-      img: null, // No image src
-      text: "Video: Title of your video", // Custom text
-      material: "Video Installation",
-      type: "video", // Special type
-    },
-    ];
-  const slider5Data = [
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/fifth-slider/1.jpg",
-        text: "16 x 36 inch",
-        material: "Material: tarcoal and rice grain",
-        type: "image",
-      },
-    ];
-  const slider6Data = [
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/1.jpg",
-        text: "Size: 24 x 3 x 5.5 inches",
-        material: "Materials: Concrete, Glass, Transparent Print, and Iron Structure",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/2.jpg",
-        text: "Size: 24 x 3 x 5.5 inches",
-        material: "Materials: Concrete, Glass, Transparent Print, and Iron Structure",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/3.jpg",
-        text: "Size: 24 x 3 x 5.5 inches",
-        material: "Materials: Concrete, Glass, Transparent Print, and Iron Structure",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/4.jpg",
-        text: "Size: 24 x 3 x 5.5 inches",
-        material: "Materials: Concrete, Glass, Transparent Print, and Iron Structure",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/5.jpg",
-        text: "Size: 24 x 3 x 5.5 inches",
-        material: "Materials: Concrete, Glass, Transparent Print, and Iron Structure",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/sixth-slider/6.jpg",
-        text: "Size: 24 x 3 x 5.5 inches",
-        material: "Materials: Concrete, Glass, Transparent Print, and Iron Structure",
-        type: "image",
-      },
-    ];
-  const slider7Data = [
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/1.jpg",
-        text: "",
-        material: "",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/2.jpg",
-        text: "",
-        material: "",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/3.jpg",
-        text: "",
-        material: "",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/4.jpg",
-        text: "",
-        material: "",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/seventh-slider/5.jpg",
-        text: "",
-        material: "",
-        type: "image",
-      },
-    ];
-  const slider8Data = [
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/1.jpg",
-        text: "Size: 11.7 x 16.5 inches",
-        material: "Material: Cloth with Sweat Stain Print",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/2.jpg",
-        text: "Size: 11.7 x 16.5 inches",
-        material: "Material: Cloth with Sweat Stain Print",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/3.jpg",
-        text: "Size: 11.7 x 16.5 inches",
-        material: "Material: Cloth with Sweat Stain Print",
-        type: "image",
-      },
-      {
-        img: "./assets/img/A MURMUR BENEATH tHE DUST/eigth-slider/4.jpg",
-        text: "Size: 11.7 x 16.5 inches",
-        material: "Material: Cloth with Sweat Stain Print",
-        type: "image",
-      },
-    ];
-
-  // --- INITIALIZE ALL SLIDERS WHEN THE PAGE LOADS ---
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    // Initialize slider 1
-    initializeSlider("slider1", slider1Data);
-    
-    // Initialize slider 2
-    if (document.getElementById("slider2")) {
-      initializeSlider("slider2", slider2Data);
-    }
-
-    // Initialize slider 3
-    if (document.getElementById("slider3")) {
-      initializeSlider("slider3", slider3Data);
-    }
-
-    // Initialize slider 4
-    if (document.getElementById("slider4")) {
-      initializeSlider("slider4", slider4Data);
-    }
-
-    // Initialize slider 5
-    if (document.getElementById("slider5")) {
-      initializeSlider("slider5", slider5Data);
-    }
-
-    // Initialize slider 6
-    if (document.getElementById("slider6")) {
-      initializeSlider("slider6", slider6Data);
-    }
-
-    // Initialize slider 7
-    if (document.getElementById("slider7")) {
-      initializeSlider("slider7", slider7Data);
-    }
-
-    // Initialize slider 8
-    if (document.getElementById("slider8")) {
-      initializeSlider("slider8", slider8Data);
-    }
-  });
-
-</script>
+    </script>
   </body>
 </html>

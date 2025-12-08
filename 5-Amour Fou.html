@@ -71,14 +71,14 @@
       }
 
       /* This makes the video have the same 90% width */
-.cmf-sl .slide-container iframe {
-  width: 90%;
-  aspect-ratio: 16 / 9; /* Gives it a 16:9 video shape */
-  height: auto;
-  vertical-align: middle;
-  margin-left: auto;
-  margin-right: auto;
-}
+      .cmf-sl .slide-container iframe {
+        width: 90%;
+        aspect-ratio: 16 / 9; /* Gives it a 16:9 video shape */
+        height: auto;
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       .cmf-sl .arrow {
         position: absolute;
@@ -98,9 +98,10 @@
         right: 0;
       }
       .cmf-sl .about {
-        margin-top: 10px;
-        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 0;
         color: #333;
+        line-height: 1.4;
       }
       .cmf-sl .thumbnails {
         display: flex;
@@ -147,9 +148,9 @@
           object-fit: cover;
         }
         /* ADD THIS RULE for the mobile video width */
-  .cmf-sl .slide-container iframe {
-    width: 85%;
-  }
+        .cmf-sl .slide-container iframe {
+          width: 85%;
+        }
         .cmf-sl .about {
           margin-top: 10px;
           font-size: 13px;
@@ -235,455 +236,534 @@
       <div class="mt-50">
         <div class="container">
           <div class="row g-4">
+            <!-- Slider 1 -->
+            <div id="slider1" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-            
-<!-- Slider 1 -->
-<div id="slider1" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/1%20slider/1.jpeg?updatedAt=1762959746914"
+                      alt="Slide"
+                    />
+                    <iframe
+                      class="video-slide"
+                      src="https://www.youtube.com/embed/9shlOUg84yU?rel=0&loop=1&playlist=9shlOUg84yU"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      style="display: none"
+                    ></iframe>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/1%20slider/1.jpeg?updatedAt=1762959746914" alt="Slide"
-        />
-        <iframe
-  class="video-slide"
-  src="https://www.youtube.com/embed/9shlOUg84yU?rel=0&loop=1&playlist=9shlOUg84yU"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
-  style="display: none;"
-></iframe>
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-        <button class="arrow right">&#10095;</button>
-      </div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: Beneath His Room Lies a Cell</h5>
+                  </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: Beneath His Room Lies a Cell</h5> </div>
+                  <div class="about about-text">
+                    Size: 20 × 20 × 10 feet Installation
+                  </div>
 
-      <div class="about about-text">Size: 20 × 20 × 10 feet Installation</div>
+                  <div class="about material-text">
+                    Material: Real TV, sofa, wall clock, and center table — all
+                    half-cut
+                  </div>
 
-        <div class="about material-text">Material: Real TV, sofa, wall clock, and center table — all half-cut</div>
+                  <div class="" style="color: #000"><p>Year: 2014</p></div>
 
-        <div class="" style="color: #000"><p></p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/1%20slider/1.jpeg?updatedAt=1762959746914" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/1%20slider/2.jpeg?updatedAt=1762959746813" />
-          <img
-          src="https://img.youtube.com/vi/9shlOUg84yU/0.jpg"
-          alt="Video Thumbnail"
-        />
-        
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/1%20slider/1.jpeg?updatedAt=1762959746914"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/1%20slider/2.jpeg?updatedAt=1762959746813"
+                    />
+                    <img
+                      src="https://img.youtube.com/vi/9shlOUg84yU/0.jpg"
+                      alt="Video Thumbnail"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!-- Slider 2 -->
+            <div id="slider2" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-<!-- Slider 2 -->
-<div id="slider2" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/1.jpeg?updatedAt=1762959766765"
+                      alt="Slide"
+                    />
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/1.jpeg?updatedAt=1762959766765" alt="Slide"
-        />
-        <button class="arrow right">&#10095;</button>
-      </div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: Aphasia</h5>
+                  </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: Aphasia</h5> </div>
+                  <div class="about about-text">Size: Variable</div>
 
-      <div class="about about-text">Size: Variable</div>
+                  <div class="about material-text">
+                    Material: Acrylic, paper, watercolor, print, and wood
+                  </div>
 
-        <div class="about material-text">Material: Acrylic, paper, watercolor, print, and wood</div>
+                  <div class="" style="color: #000"><p>Year: 2014</p></div>
 
-        <div class="" style="color: #000"><p>Year: 2014</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <!-- 1  -->
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/1.jpeg?updatedAt=1762959766765" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/2.jpeg?updatedAt=1762959766847" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/3.jpeg?updatedAt=1762959766691" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/4.jpeg?updatedAt=1762959766832" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/5.jpeg?updatedAt=1762959766852" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/6.jpeg?updatedAt=1762959766673" 
-        />
-        <!-- 7 -->
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/7.jpeg?updatedAt=1762959766735" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/8.jpeg?updatedAt=1762959766954" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/9.jpeg?updatedAt=1762959766704" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/10.jpeg?updatedAt=1762959766730" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/11.jpeg?updatedAt=1762959766818" 
-        />
-        <!-- 13 -->
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/12.jpeg?updatedAt=1762959766859" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/13.jpeg?updatedAt=1762959766756" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/14.jpeg?updatedAt=1762959766838" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/15.jpeg?updatedAt=1762959766690" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/16.jpeg?updatedAt=1762959766829" 
-        />
-        <!-- 19 -->
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/17.jpeg?updatedAt=1762959766786" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/18.jpeg?updatedAt=1762959766756" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/19.jpeg?updatedAt=1762959766770" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/20.jpeg?updatedAt=1762959766807" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/21.jpeg?updatedAt=1762959766776" 
-        />
-        <!-- 25 -->
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/22.jpeg?updatedAt=1762959766743" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/23.jpeg?updatedAt=1762959766688" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/24.jpeg?updatedAt=1762959766830" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/25.jpeg?updatedAt=1762959766694" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/26.jpeg?updatedAt=1762959766715" 
-        />
-        <!-- 31 -->
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/27.jpeg?updatedAt=1762959766644" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/28.jpeg?updatedAt=1762959766307" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/29.jpeg?updatedAt=1762959766767" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/30.jpeg?updatedAt=1762959766164" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/31.jpeg?updatedAt=1762959766795"
-        />
-        <!-- 38 -->
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/32.jpeg?updatedAt=1762959766789" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/33.jpeg?updatedAt=1762959766728" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/34.jpeg?updatedAt=1762959766802" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/35.jpeg?updatedAt=1762959766796" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/36.jpeg?updatedAt=1762959766776" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/37.jpeg?updatedAt=1762959766964" />
-        
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <!-- 1  -->
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/1.jpeg?updatedAt=1762959766765"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/2.jpeg?updatedAt=1762959766847"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/3.jpeg?updatedAt=1762959766691"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/4.jpeg?updatedAt=1762959766832"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/5.jpeg?updatedAt=1762959766852"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/6.jpeg?updatedAt=1762959766673"
+                    />
+                    <!-- 7 -->
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/7.jpeg?updatedAt=1762959766735"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/8.jpeg?updatedAt=1762959766954"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/9.jpeg?updatedAt=1762959766704"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/10.jpeg?updatedAt=1762959766730"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/11.jpeg?updatedAt=1762959766818"
+                    />
+                    <!-- 13 -->
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/12.jpeg?updatedAt=1762959766859"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/13.jpeg?updatedAt=1762959766756"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/14.jpeg?updatedAt=1762959766838"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/15.jpeg?updatedAt=1762959766690"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/16.jpeg?updatedAt=1762959766829"
+                    />
+                    <!-- 19 -->
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/17.jpeg?updatedAt=1762959766786"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/18.jpeg?updatedAt=1762959766756"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/19.jpeg?updatedAt=1762959766770"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/20.jpeg?updatedAt=1762959766807"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/21.jpeg?updatedAt=1762959766776"
+                    />
+                    <!-- 25 -->
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/22.jpeg?updatedAt=1762959766743"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/23.jpeg?updatedAt=1762959766688"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/24.jpeg?updatedAt=1762959766830"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/25.jpeg?updatedAt=1762959766694"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/26.jpeg?updatedAt=1762959766715"
+                    />
+                    <!-- 31 -->
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/27.jpeg?updatedAt=1762959766644"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/28.jpeg?updatedAt=1762959766307"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/29.jpeg?updatedAt=1762959766767"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/30.jpeg?updatedAt=1762959766164"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/31.jpeg?updatedAt=1762959766795"
+                    />
+                    <!-- 38 -->
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/32.jpeg?updatedAt=1762959766789"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/33.jpeg?updatedAt=1762959766728"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/34.jpeg?updatedAt=1762959766802"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/35.jpeg?updatedAt=1762959766796"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/36.jpeg?updatedAt=1762959766776"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/37.jpeg?updatedAt=1762959766964"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-<!-- Slider 3 -->
-<div id="slider3" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+            <!-- Slider 3 -->
+            <div id="slider3" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/3%20slider/1.jpeg?updatedAt=1762959793280" alt="Slide"
-        />
-        <button class="arrow right">&#10095;</button>
-      </div>
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/3%20slider/1.jpeg?updatedAt=1762959793280"
+                      alt="Slide"
+                    />
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: Change Me or Be Like Me</h5> </div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: Change Me or Be Like Me</h5>
+                  </div>
 
-      <div class="about about-text">Size: 60 × 24 inches</div>
+                  <div class="about about-text">Size: 60 × 24 inches</div>
 
-        <div class="about material-text">Medium: Print on archival paper</div>
+                  <div class="about material-text">
+                    Medium: Print on archival paper
+                  </div>
 
-        <div class="" style="color: #000"><p></p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/3%20slider/1.jpeg?updatedAt=1762959793280" class="active"
-        />
-        
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="" style="color: #000"><p>Year: 2014</p></div>
 
-<!-- Slider 4 -->
-<div id="slider4" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/3%20slider/1.jpeg?updatedAt=1762959793280"
+                      class="active"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/4%20slider/1.jpeg?updatedAt=1762959807948" alt="Slide"
-        />
-        <iframe
-  class="video-slide"
-  src="https://www.youtube.com/embed/7PlD0URJ_4w?rel=0"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin" 
-  allowfullscreen
-  style="display: none;"
-></iframe>
-        <button class="arrow right">&#10095;</button>
-      </div>
+            <!-- Slider 4 -->
+            <div id="slider4" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: I Never Promised You a Rose Garden</h5> </div>
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/4%20slider/1.jpeg?updatedAt=1762959807948"
+                      alt="Slide"
+                    />
+                    <iframe
+                      class="video-slide"
+                      src="https://www.youtube.com/embed/7PlD0URJ_4w?rel=0"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      style="display: none"
+                    ></iframe>
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-      <div class="about about-text"></div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: I Never Promised You a Rose Garden</h5>
+                  </div>
 
-        <div class="about material-text"></div>
+                  <div class="about about-text"></div>
 
-        <div class="" style="color: #000"><p></p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/4%20slider/1.jpeg?updatedAt=1762959807948" class="active"
-        />
-        
-        
-          <img
-  src="https://img.youtube.com/vi/7PlD0URJ_4w/0.jpg"
-  alt="Video Thumbnail"
-/>
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="about material-text"></div>
 
-<!-- Slider 5 -->
-<div id="slider5" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="" style="color: #000"><p>Year: 2014</p></div>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/1.jpeg?updatedAt=1762959826473" alt="Slide"
-        />
-       
-        <button class="arrow right">&#10095;</button>
-      </div>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/4%20slider/1.jpeg?updatedAt=1762959807948"
+                      class="active"
+                    />
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: Lachrymoscope</h5> </div>
+                    <img
+                      src="https://img.youtube.com/vi/7PlD0URJ_4w/0.jpg"
+                      alt="Video Thumbnail"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      <div class="about about-text">Size: 10 × 10 × 10 ft Installation</div>
+            <!-- Slider 5 -->
+            <div id="slider5" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-        <div class="about material-text">Material: Circuit, acrylic box, print on archival paper</div>
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/1.jpeg?updatedAt=1762959826473"
+                      alt="Slide"
+                    />
 
-        <div class="" style="color: #000"><p></p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/1.jpeg?updatedAt=1762959826473" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/2.jpeg?updatedAt=1762959826528" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/3.jpeg?updatedAt=1762959826002" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/4.jpeg?updatedAt=1762959826024" class="active"
-        />
-        </div>
-    </div>
-  </div>
-</div>
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-<!-- Slider 6 -->
-<div id="slider6" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: Lachrymoscope</h5>
+                  </div>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/6%20slider/1.jpeg?updatedAt=1762959843028" alt="Slide"
-        />
-        <button class="arrow right">&#10095;</button>
-      </div>
+                  <div class="about about-text">
+                    Size: 10 × 10 × 10 ft Installation
+                  </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: Made for Each Other</h5> </div>
+                  <div class="about material-text">
+                    Material: Circuit, acrylic box, print on archival paper
+                  </div>
 
-      <div class="about about-text">Size: variable</div>
+                  <div class="" style="color: #000"><p>Year: 2014</p></div>
 
-        <div class="about material-text">Material: Glass Plastic, Paper, Stainless steel, Tobacco and Wood</div>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/1.jpeg?updatedAt=1762959826473"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/2.jpeg?updatedAt=1762959826528"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/3.jpeg?updatedAt=1762959826002"
+                      class="active"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/4.jpeg?updatedAt=1762959826024"
+                      class="active"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <div class="" style="color: #000"><p>Year : 2014</p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/6%20slider/1.jpeg?updatedAt=1762959843028" class="active"
-        />
-        
-        </div>
-    </div>
-  </div>
-</div>
+            <!-- Slider 6 -->
+            <div id="slider6" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-<!-- Slider 7 -->
-<div id="slider7" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/6%20slider/1.jpeg?updatedAt=1762959843028"
+                      alt="Slide"
+                    />
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/7%20slider/1.jpeg?updatedAt=1762959860457" alt="Slide"
-        />
-        <iframe
-          class="video-slide"
-          src="https://www.youtube.com/embed/TIMaMQJR1qg?rel=0&loop=1&playlist=TIMaMQJR1qg"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          style="display: none;"
-        ></iframe>
-        <button class="arrow right">&#10095;</button>
-      </div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: Made for Each Other</h5>
+                  </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: Often I Miss You</h5> </div>
+                  <div class="about about-text">Size: variable</div>
 
-      <div class="about about-text">Size: 60" × 5'</div>
+                  <div class="about material-text">
+                    Material: Glass Plastic, Paper, Stainless steel, Tobacco and
+                    Wood
+                  </div>
 
-        <div class="about material-text">Material: Cloth, wood, and water spraying and drying mechanism</div>
+                  <div class="" style="color: #000"><p>Year : 2014</p></div>
 
-        <div class="" style="color: #000"><p></p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/7%20slider/1.jpeg?updatedAt=1762959860457" class="active"
-        />
-        <img
-          src="https://img.youtube.com/vi/TIMaMQJR1qg/0.jpg"
-          alt="Video Thumbnail"
-        />
-        
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/6%20slider/1.jpeg?updatedAt=1762959843028"
+                      class="active"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-<!-- Slider 8 -->
-<div id="slider8" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+            <!-- Slider 7 -->
+            <div id="slider7" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/8%20slider/1.jpeg?updatedAt=1762959877711" alt="Slide"
-        />
-        <button class="arrow right">&#10095;</button>
-      </div>
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/7%20slider/1.jpeg?updatedAt=1762959860457"
+                      alt="Slide"
+                    />
+                    <iframe
+                      class="video-slide"
+                      src="https://www.youtube.com/embed/TIMaMQJR1qg?rel=0&loop=1&playlist=TIMaMQJR1qg"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                      style="display: none"
+                    ></iframe>
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: Weave Me in Winter, Ferry You in Summer</h5> </div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: Often I Miss You</h5>
+                  </div>
 
-      <div class="about about-text">Size: 78 × 78 inches</div>
+                  <div class="about about-text">Size: 60" × 5'</div>
 
-        <div class="about material-text">Material: Electronic circuit, cloth, curtain, motor, print on archival (Hahnemühle) paper, and wood</div>
+                  <div class="about material-text">
+                    Material: Cloth, wood, and water spraying and drying
+                    mechanism
+                  </div>
 
-        <div class="" style="color: #000"><p></p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/8%20slider/1.jpeg?updatedAt=1762959877711" class="active"
-        />
-        
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="" style="color: #000"><p>Year: 2014</p></div>
 
-<!-- Slider 9 -->
-<div id="slider9" class="col-lg-12 column">
-  <div class="cmf-sl">
-    <div class="slider">
-      <div class="slide-container">
-        <button class="arrow left">&#10094;</button>
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/7%20slider/1.jpeg?updatedAt=1762959860457"
+                      class="active"
+                    />
+                    <img
+                      src="https://img.youtube.com/vi/TIMaMQJR1qg/0.jpg"
+                      alt="Video Thumbnail"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <img
-          class="main-image" 
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/1.jpeg?updatedAt=1762959896039" alt="Slide"
-        />
-        <button class="arrow right">&#10095;</button>
-      </div>
+            <!-- Slider 8 -->
+            <div id="slider8" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
 
-      <div class="" style="margin-top: 10px">
-        <h5>Title: Woven Out of Love</h5> </div>
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/8%20slider/1.jpeg?updatedAt=1762959877711"
+                      alt="Slide"
+                    />
+                    <button class="arrow right">&#10095;</button>
+                  </div>
 
-      <div class="about about-text">Size: 72 × 48 inches</div>
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: Weave Me in Winter, Ferry You in Summer</h5>
+                  </div>
 
-        <div class="about material-text">Material: Acrylic, archival paper, cloth, silicon rubber, and synthetic hair</div>
+                  <div class="about about-text">Size: 78 × 78 inches</div>
 
-        <div class="" style="color: #000"><p></p></div>
-      
-      <div class="thumbnails" id="thumbnail-container">
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/1.jpeg?updatedAt=1762959896039" class="active"
-        />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/2.jpeg?updatedAt=1762959896390" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/3.jpeg?updatedAt=1762959896063" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/4.jpeg?updatedAt=1762959896057" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/5.jpeg?updatedAt=1762959896459" />
-        <img
-          src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/6.jpeg?updatedAt=1762959896378" />
-        </div>
-    </div>
-  </div>
-</div>
+                  <div class="about material-text">
+                    Material: Electronic circuit, cloth, curtain, motor, print
+                    on archival (Hahnemühle) paper, and wood
+                  </div>
 
+                  <div class="" style="color: #000"><p>Year: 2014</p></div>
 
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/8%20slider/1.jpeg?updatedAt=1762959877711"
+                      class="active"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!-- Slider 9 -->
+            <div id="slider9" class="col-lg-12 column">
+              <div class="cmf-sl">
+                <div class="slider">
+                  <div class="slide-container">
+                    <button class="arrow left">&#10094;</button>
+
+                    <img
+                      class="main-image"
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/1.jpeg?updatedAt=1762959896039"
+                      alt="Slide"
+                    />
+                    <button class="arrow right">&#10095;</button>
+                  </div>
+
+                  <div class="" style="margin-top: 10px">
+                    <h5>Title: Woven Out of Love</h5>
+                  </div>
+
+                  <div class="about about-text">Size: 72 × 48 inches</div>
+
+                  <div class="about material-text">
+                    Material: Acrylic, archival paper, cloth, silicon rubber,
+                    and synthetic hair
+                  </div>
+
+                  <div class="" style="color: #000"><p>Year: 2014</p></div>
+
+                  <div class="thumbnails" id="thumbnail-container">
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/2.jpeg?updatedAt=1762959896390"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/6.jpeg?updatedAt=1762959896378"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/3.jpeg?updatedAt=1762959896063"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/4.jpeg?updatedAt=1762959896057"
+                    />
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/5.jpeg?updatedAt=1762959896459"
+                    />
+
+                    <img
+                      src="https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/1.jpeg?updatedAt=1762959896039"
+                      class="active"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -709,521 +789,517 @@
     <script src="./assets/js/countdown.min.js"></script>
     <script src="./assets/js/main.js"></script>
 
-    
-     <script>
-  /**
-   * This function initializes a single, independent slider.
-   * @param {string} sliderId - The ID of the main wrapper (e.g., "slider1").
-   * @param {Array<Object>} slidesData - An array of objects with data for this slider.
-   */
-  function initializeSlider(sliderId, slidesData) {
-    // 1. Find the wrapper element
-    const slider = document.getElementById(sliderId);
-    
-    // 2. Find all elements for this slider
-    const mainImage = slider.querySelector(".main-image");
-    const aboutText = slider.querySelector(".about-text");
-    const materialText = slider.querySelector(".material-text");
-    const thumbnails = slider.querySelectorAll(".thumbnails img");
-    const leftArrow = slider.querySelector(".arrow.left");
-    const rightArrow = slider.querySelector(".arrow.right");
+    <script>
+      /**
+       * This function initializes a single, independent slider.
+       * @param {string} sliderId - The ID of the main wrapper (e.g., "slider1").
+       * @param {Array<Object>} slidesData - An array of objects with data for this slider.
+       */
+      function initializeSlider(sliderId, slidesData) {
+        // 1. Find the wrapper element
+        const slider = document.getElementById(sliderId);
 
-    // NEW: Find the video slide
-    const videoSlide = slider.querySelector(".video-slide");
-    // NEW: Store the original video src to pause it later
-    const videoSrc = videoSlide ? videoSlide.src : null;
+        // 2. Find all elements for this slider
+        const mainImage = slider.querySelector(".main-image");
+        const aboutText = slider.querySelector(".about-text");
+        const materialText = slider.querySelector(".material-text");
+        const thumbnails = slider.querySelectorAll(".thumbnails img");
+        const leftArrow = slider.querySelector(".arrow.left");
+        const rightArrow = slider.querySelector(".arrow.right");
 
-    let currentIndex = 0;
+        // NEW: Find the video slide
+        const videoSlide = slider.querySelector(".video-slide");
+        // NEW: Store the original video src to pause it later
+        const videoSrc = videoSlide ? videoSlide.src : null;
 
-    // 3. Define the function to show a slide
-    function showSlide(index) {
-      currentIndex = index;
-      const slideData = slidesData[index];
+        let currentIndex = 0;
 
-      // NEW LOGIC:
-      if (slideData.type === "video") {
-        // --- This is the VIDEO slide ---
-        mainImage.style.display = "none"; // Hide image
-        
-        // Set the video src back (this will load/reload it)
-        videoSlide.src = videoSrc; 
-        videoSlide.style.display = "block"; // Show video
-        
-      } else {
-        // --- This is an IMAGE slide ---
-        if (videoSlide) {
-          videoSlide.style.display = "none"; // Hide video
-          
-          // Set src to 'about:blank' to completely stop the video
-          // This prevents background reloading and Error 153
-          videoSlide.src = "about:blank"; 
+        // 3. Define the function to show a slide
+        function showSlide(index) {
+          currentIndex = index;
+          const slideData = slidesData[index];
+
+          // NEW LOGIC:
+          if (slideData.type === "video") {
+            // --- This is the VIDEO slide ---
+            mainImage.style.display = "none"; // Hide image
+
+            // Set the video src back (this will load/reload it)
+            videoSlide.src = videoSrc;
+            videoSlide.style.display = "block"; // Show video
+          } else {
+            // --- This is an IMAGE slide ---
+            if (videoSlide) {
+              videoSlide.style.display = "none"; // Hide video
+
+              // Set src to 'about:blank' to completely stop the video
+              // This prevents background reloading and Error 153
+              videoSlide.src = "about:blank";
+            }
+            mainImage.style.display = "block"; // Show image
+            mainImage.src = slideData.img; // Set image src
+          }
+
+          // Update the text
+          aboutText.textContent = slideData.text;
+          materialText.textContent = slideData.material;
+
+          // Update the 'active' class on thumbnails
+          thumbnails.forEach((thumb) => thumb.classList.remove("active"));
+          thumbnails[index].classList.add("active");
         }
-        mainImage.style.display = "block"; // Show image
-        mainImage.src = slideData.img; // Set image src
+
+        // 4. Attach event listeners
+        leftArrow.addEventListener("click", () => {
+          let newIndex =
+            (currentIndex - 1 + slidesData.length) % slidesData.length;
+          showSlide(newIndex);
+        });
+
+        rightArrow.addEventListener("click", () => {
+          let newIndex = (currentIndex + 1) % slidesData.length;
+          showSlide(newIndex);
+        });
+
+        thumbnails.forEach((thumb, index) => {
+          thumb.addEventListener("click", () => {
+            if (slidesData[index]) {
+              showSlide(index);
+            }
+          });
+        });
+
+        // 5. Initialize the slider to the first slide
+        showSlide(0);
       }
 
-      // Update the text
-      aboutText.textContent = slideData.text;
-      materialText.textContent = slideData.material;
-      
-      // Update the 'active' class on thumbnails
-      thumbnails.forEach((thumb) => thumb.classList.remove("active"));
-      thumbnails[index].classList.add("active");
-    }
+      // --- ALL YOUR SLIDER DATA GOES HERE ---
 
-    // 4. Attach event listeners
-    leftArrow.addEventListener("click", () => {
-      let newIndex = (currentIndex - 1 + slidesData.length) % slidesData.length;
-      showSlide(newIndex);
-    });
+      // UPDATED: Data for the first slider
 
-    rightArrow.addEventListener("click", () => {
-      let newIndex = (currentIndex + 1) % slidesData.length;
-      showSlide(newIndex);
-    });
+      // Data for the second slider (YOU MUST FILL THIS IN)
 
-    thumbnails.forEach((thumb, index) => {
-      thumb.addEventListener("click", () => {
-        if (slidesData[index]) {
-          showSlide(index);
+      const slider1Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/1%20slider/1.jpeg?updatedAt=1762959746914",
+          text: "Size: 20 × 20 × 10 feet Installation",
+          material:
+            "Material: Real TV, sofa, wall clock, and center table — all half-cut",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/1%20slider/2.jpeg?updatedAt=1762959746813",
+          text: "Size: 20 × 20 × 10 feet Installation",
+          material:
+            "Material: Real TV, sofa, wall clock, and center table — all half-cut",
+          type: "image",
+        },
+        {
+          img: null,
+          text: "Size: 20 × 20 × 10 feet Installation",
+          material:
+            "Material: Real TV, sofa, wall clock, and center table — all half-cut",
+          type: "video",
+        },
+      ];
+
+      const slider2Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/1.jpeg?updatedAt=1762959766765",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/2.jpeg?updatedAt=1762959766847",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/3.jpeg?updatedAt=1762959766691",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/4.jpeg?updatedAt=1762959766832",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/5.jpeg?updatedAt=1762959766852",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/6.jpeg?updatedAt=1762959766673",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/7.jpeg?updatedAt=1762959766735",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/8.jpeg?updatedAt=1762959766954",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/9.jpeg?updatedAt=1762959766704",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/10.jpeg?updatedAt=1762959766730",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/11.jpeg?updatedAt=1762959766818",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/12.jpeg?updatedAt=1762959766859",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/13.jpeg?updatedAt=1762959766756",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/14.jpeg?updatedAt=1762959766838",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/15.jpeg?updatedAt=1762959766690",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/16.jpeg?updatedAt=1762959766829",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/17.jpeg?updatedAt=1762959766786",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/18.jpeg?updatedAt=1762959766756",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/19.jpeg?updatedAt=1762959766770",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/20.jpeg?updatedAt=1762959766807",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/21.jpeg?updatedAt=1762959766776",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/22.jpeg?updatedAt=1762959766743",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/23.jpeg?updatedAt=1762959766688",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/24.jpeg?updatedAt=1762959766830",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/25.jpeg?updatedAt=1762959766694",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/26.jpeg?updatedAt=1762959766715",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/27.jpeg?updatedAt=1762959766644",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/28.jpeg?updatedAt=1762959766307",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/29.jpeg?updatedAt=1762959766767",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/30.jpeg?updatedAt=1762959766164",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/31.jpeg?updatedAt=1762959766795",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/32.jpeg?updatedAt=1762959766789",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/33.jpeg?updatedAt=1762959766728",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/34.jpeg?updatedAt=1762959766802",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/35.jpeg?updatedAt=1762959766796",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/36.jpeg?updatedAt=1762959766776",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/37.jpeg?updatedAt=1762959766964",
+          text: "Size: Variable",
+          material: "Material: Acrylic, paper, watercolor, print, and wood",
+          type: "image",
+        },
+      ];
+
+      const slider3Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/3%20slider/1.jpeg?updatedAt=1762959793280",
+          text: "Size: 60 × 24 inches",
+          material: "Medium: Print on archival paper",
+          type: "image",
+        },
+      ];
+
+      const slider4Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/4%20slider/1.jpeg?updatedAt=1762959807948",
+          text: "",
+          material: "",
+          type: "image",
+        },
+        {
+          // NEW: Video slide data
+          img: null, // No image src
+          text: "", // Custom text
+          material: "Medium: Single-channel video (still)",
+          type: "video", // Special type
+        },
+      ];
+
+      const slider5Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/1.jpeg?updatedAt=1762959826473",
+          text: "Size: 10 × 10 × 10 ft Installation",
+          material: "Material: Circuit, acrylic box, print on archival paper",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/2.jpeg?updatedAt=1762959826528",
+          text: "Size: 10 × 10 × 10 ft Installation",
+          material: "Material: Circuit, acrylic box, print on archival paper",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/3.jpeg?updatedAt=1762959826002",
+          text: "Size: 10 × 10 × 10 ft Installation",
+          material: "Material: Circuit, acrylic box, print on archival paper",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/4.jpeg?updatedAt=1762959826024",
+          text: "Size: 10 × 10 × 10 ft Installation",
+          material: "Material: Circuit, acrylic box, print on archival paper",
+          type: "image",
+        },
+      ];
+
+      const slider6Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/6%20slider/1.jpeg?updatedAt=1762959843028",
+          text: "Size: variable",
+          material:
+            "Material: Glass Plastic, Paper, Stainless steel, Tobacco and Wood",
+          type: "image",
+        },
+      ];
+
+      const slider7Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/7%20slider/1.jpeg?updatedAt=1762959860457",
+          text: "Size: 60 × 5 inches",
+          material:
+            "Material: Cloth, wood, and water spraying and drying mechanism",
+          type: "image",
+        },
+        {
+          // NEW: Video slide data
+          img: null, // No image src
+          text: "Size: 60 × 5 inches", // Custom text
+          material:
+            "Material: Cloth, wood, and water spraying and drying mechanism",
+          type: "video", // Special type
+        },
+      ];
+
+      const slider8Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/8%20slider/1.jpeg?updatedAt=1762959877711",
+          text: "Size: 78 × 78 inches",
+          material:
+            "Material: Electronic circuit, cloth, curtain, motor, print on archival (Hahnemühle) paper, and wood",
+          type: "image",
+        },
+      ];
+
+      const slider9Data = [
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/2.jpeg?updatedAt=1762959896390",
+          text: "Size: 72 × 48 inches",
+          material:
+            "Material: Acrylic, archival paper, cloth, silicon rubber, and synthetic hair",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/6.jpeg?updatedAt=1762959896378",
+          text: "Size: 72 × 48 inches",
+          material:
+            "Material: Acrylic, archival paper, cloth, silicon rubber, and synthetic hair",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/3.jpeg?updatedAt=1762959896063",
+          text: "Size: 72 × 48 inches",
+          material:
+            "Material: Acrylic, archival paper, cloth, silicon rubber, and synthetic hair",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/4.jpeg?updatedAt=1762959896057",
+          text: "Size: 72 × 48 inches",
+          material:
+            "Material: Acrylic, archival paper, cloth, silicon rubber, and synthetic hair",
+          type: "image",
+        },
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/5.jpeg?updatedAt=1762959896459",
+          text: "Size: 72 × 48 inches",
+          material:
+            "Material: Acrylic, archival paper, cloth, silicon rubber, and synthetic hair",
+          type: "image",
+        },
+
+        {
+          img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/1.jpeg?updatedAt=1762959896039",
+          text: "Size: 72 × 48 inches",
+          material:
+            "Material: Acrylic, archival paper, cloth, silicon rubber, and synthetic hair",
+          type: "image",
+        },
+      ];
+
+      // --- INITIALIZE ALL SLIDERS WHEN THE PAGE LOADS ---
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize slider 1
+        initializeSlider("slider1", slider1Data); // Initialize slider 2
+        if (document.getElementById("slider2")) {
+          initializeSlider("slider2", slider2Data);
+        } // Initialize slider 3
+
+        if (document.getElementById("slider3")) {
+          initializeSlider("slider3", slider3Data);
+        } // Initialize slider 4
+
+        if (document.getElementById("slider4")) {
+          initializeSlider("slider4", slider4Data);
+        } // Initialize slider 5
+
+        if (document.getElementById("slider5")) {
+          initializeSlider("slider5", slider5Data);
+        } // Initialize slider 6
+
+        if (document.getElementById("slider6")) {
+          initializeSlider("slider6", slider6Data);
+        } // Initialize slider 7
+
+        if (document.getElementById("slider7")) {
+          initializeSlider("slider7", slider7Data);
+        } // Initialize slider 8
+
+        if (document.getElementById("slider8")) {
+          initializeSlider("slider8", slider8Data);
+        } // Initialize slider 9
+
+        if (document.getElementById("slider9")) {
+          initializeSlider("slider9", slider9Data);
         }
       });
-    });
-
-    // 5. Initialize the slider to the first slide
-    showSlide(0);
-  }
-
-  // --- ALL YOUR SLIDER DATA GOES HERE ---
-
-  // UPDATED: Data for the first slider
-  
-
-  // Data for the second slider (YOU MUST FILL THIS IN)
- 
-  const slider1Data = [
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/1%20slider/1.jpeg?updatedAt=1762959746914",
-        text: "Size: 20 × 20 × 10 feet Installation",
-        material: "Material: Real TV, sofa, wall clock, and center table — all half-cut",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/1%20slider/2.jpeg?updatedAt=1762959746813",
-        text: "Size: 20 × 20 × 10 feet Installation",
-        material: "Material: Real TV, sofa, wall clock, and center table — all half-cut",
-        type: "image",
-      },
-      {
-        img: null,
-        text: "Size: 20 × 20 × 10 feet Installation",
-        material: "Material: Real TV, sofa, wall clock, and center table — all half-cut",
-        type: "video",
-      },
-      
-    ];
-  
-const slider2Data = [
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/1.jpeg?updatedAt=1762959766765",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/2.jpeg?updatedAt=1762959766847",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/3.jpeg?updatedAt=1762959766691",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/4.jpeg?updatedAt=1762959766832",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/5.jpeg?updatedAt=1762959766852",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/6.jpeg?updatedAt=1762959766673",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/7.jpeg?updatedAt=1762959766735",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/8.jpeg?updatedAt=1762959766954",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/9.jpeg?updatedAt=1762959766704",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/10.jpeg?updatedAt=1762959766730",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/11.jpeg?updatedAt=1762959766818",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/12.jpeg?updatedAt=1762959766859",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/13.jpeg?updatedAt=1762959766756",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/14.jpeg?updatedAt=1762959766838",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/15.jpeg?updatedAt=1762959766690",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/16.jpeg?updatedAt=1762959766829",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/17.jpeg?updatedAt=1762959766786",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/18.jpeg?updatedAt=1762959766756",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/19.jpeg?updatedAt=1762959766770",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/20.jpeg?updatedAt=1762959766807",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/21.jpeg?updatedAt=1762959766776",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/22.jpeg?updatedAt=1762959766743",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/23.jpeg?updatedAt=1762959766688",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/24.jpeg?updatedAt=1762959766830",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/25.jpeg?updatedAt=1762959766694",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/26.jpeg?updatedAt=1762959766715",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/27.jpeg?updatedAt=1762959766644",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/28.jpeg?updatedAt=1762959766307",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/29.jpeg?updatedAt=1762959766767",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/30.jpeg?updatedAt=1762959766164",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/31.jpeg?updatedAt=1762959766795",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/32.jpeg?updatedAt=1762959766789",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/33.jpeg?updatedAt=1762959766728",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/34.jpeg?updatedAt=1762959766802",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/35.jpeg?updatedAt=1762959766796",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/36.jpeg?updatedAt=1762959766776",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/2%20slider/37.jpeg?updatedAt=1762959766964",
-        text: "Size: Variable",
-        material: "Material: Acrylic, paper, watercolor, print, and wood",
-        type: "image",
-      },
-      
-    ];
-  
-const slider3Data = [
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/3%20slider/1.jpeg?updatedAt=1762959793280",
-        text: "Size: 60 × 24 inches",
-        material: "Medium: Print on archival paper",
-        type: "image",
-      },
-     
-    ];
-
-const slider4Data = [
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/4%20slider/1.jpeg?updatedAt=1762959807948",
-        text: "",
-        material: "",
-        type: "image",
-      },
-      
-{
-      // NEW: Video slide data
-      img: null, // No image src
-      text: "", // Custom text
-      material: "Medium: Single-channel video (still)",
-      type: "video", // Special type
-    },
-      
-    ];
-
-const slider5Data = [
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/1.jpeg?updatedAt=1762959826473",
-        text: "Size: 10 × 10 × 10 ft Installation",
-        material: "Material: Circuit, acrylic box, print on archival paper",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/2.jpeg?updatedAt=1762959826528",
-        text: "Size: 10 × 10 × 10 ft Installation",
-        material: "Material: Circuit, acrylic box, print on archival paper",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/3.jpeg?updatedAt=1762959826002",
-        text: "Size: 10 × 10 × 10 ft Installation",
-        material: "Material: Circuit, acrylic box, print on archival paper",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/5%20slider/4.jpeg?updatedAt=1762959826024",
-        text: "Size: 10 × 10 × 10 ft Installation",
-        material: "Material: Circuit, acrylic box, print on archival paper",
-        type: "image",
-      },
-];
-
-const slider6Data = [
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/6%20slider/1.jpeg?updatedAt=1762959843028",
-        text: "Size: variable",
-        material: "Material: Glass Plastic, Paper, Stainless steel, Tobacco and Wood",
-        type: "image",
-      },
-    ];
-
-const slider7Data = [
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/7%20slider/1.jpeg?updatedAt=1762959860457",
-        text: "Size: 60 × 5",
-        material: "Material: Cloth, wood, and water spraying and drying mechanism",
-        type: "image",
-      },
-{
-      // NEW: Video slide data
-      img: null, // No image src
-      text: "Size: 60 × 5", // Custom text
-      material: "Material: Cloth, wood, and water spraying and drying mechanism",
-      type: "video", // Special type
-    },
-    ];
-
-const slider8Data = [
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/8%20slider/1.jpeg?updatedAt=1762959877711",
-        text: "Size: 78 × 78 inches",
-        material: "Material: Electronic circuit, cloth, curtain, motor, print on archival (Hahnemühle) paper, and wood",
-        type: "image",
-      }
-    ];
-
-const slider9Data = [
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/1.jpeg?updatedAt=1762959896039",
-        text: "Size: 72 × 48 inches",
-        material: "Material: Acrylic, archival paper, cloth, silicon rubber, and synthetic hair",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/2.jpeg?updatedAt=1762959896390",
-        text: "Size: 72 × 48 inches",
-        material: "Material: Acrylic, archival paper, cloth, silicon rubber, and synthetic hair",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/3.jpeg?updatedAt=1762959896063",
-        text: "Size: 72 × 48 inches",
-        material: "Material: Acrylic, archival paper, cloth, silicon rubber, and synthetic hair",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/4.jpeg?updatedAt=1762959896057",
-        text: "Size: 72 × 48 inches",
-        material: "Material: Acrylic, archival paper, cloth, silicon rubber, and synthetic hair",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/5.jpeg?updatedAt=1762959896459",
-        text: "Size: 72 × 48 inches",
-        material: "Material: Acrylic, archival paper, cloth, silicon rubber, and synthetic hair",
-        type: "image",
-      },
-      {
-        img: "https://ik.imagekit.io/deepjyotikalita/Work/5%20Amour%20Fou/9%20slider/6.jpeg?updatedAt=1762959896378",
-        text: "Size: 72 × 48 inches",
-        material: "Material: Acrylic, archival paper, cloth, silicon rubber, and synthetic hair",
-        type: "image",
-      },
-    ];
-
-  // --- INITIALIZE ALL SLIDERS WHEN THE PAGE LOADS ---
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    // Initialize slider 1
-    initializeSlider("slider1", slider1Data);
-    
-    // Initialize slider 2
-    if (document.getElementById("slider2")) {
-      initializeSlider("slider2", slider2Data);
-    }
-
-    // Initialize slider 3
-    if (document.getElementById("slider3")) {
-      initializeSlider("slider3", slider3Data);
-    }
-
-    // Initialize slider 4
-    if (document.getElementById("slider4")) {
-      initializeSlider("slider4", slider4Data);
-    }
-
-    // Initialize slider 5
-    if (document.getElementById("slider5")) {
-      initializeSlider("slider5", slider5Data);
-    }
-
-    // Initialize slider 6
-    if (document.getElementById("slider6")) {
-      initializeSlider("slider6", slider6Data);
-    }
-
-    // Initialize slider 7
-    if (document.getElementById("slider7")) {
-      initializeSlider("slider7", slider7Data);
-    }
-
-    // Initialize slider 8
-    if (document.getElementById("slider8")) {
-      initializeSlider("slider8", slider8Data);
-    }
-
-    // Initialize slider 9
-    if (document.getElementById("slider9")) {
-      initializeSlider("slider9", slider9Data);
-    }
-  });
-
-</script>
+    </script>
   </body>
 </html>
