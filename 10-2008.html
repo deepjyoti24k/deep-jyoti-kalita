@@ -610,10 +610,10 @@
         const thumbnails = slider.querySelectorAll(".thumbnails img");
         const leftArrow = slider.querySelector(".arrow.left");
         const rightArrow = slider.querySelector(".arrow.right");
+        const slideContainer = slider.querySelector(".slide-container"); // We need this for the swipe listener
 
-        // NEW: Find the video slide
+        // Find the video slide
         const videoSlide = slider.querySelector(".video-slide");
-        // NEW: Store the original video src to pause it later
         const videoSrc = videoSlide ? videoSlide.src : null;
 
         let currentIndex = 0;
@@ -623,37 +623,31 @@
           currentIndex = index;
           const slideData = slidesData[index];
 
-          // NEW LOGIC:
           if (slideData.type === "video") {
-            // --- This is the VIDEO slide ---
-            mainImage.style.display = "none"; // Hide image
-
-            // Set the video src back (this will load/reload it)
-            videoSlide.src = videoSrc;
-            videoSlide.style.display = "block"; // Show video
-          } else {
-            // --- This is an IMAGE slide ---
+            mainImage.style.display = "none";
             if (videoSlide) {
-              videoSlide.style.display = "none"; // Hide video
-
-              // Set src to 'about:blank' to completely stop the video
-              // This prevents background reloading and Error 153
+              videoSlide.src = videoSrc;
+              videoSlide.style.display = "block";
+            }
+          } else {
+            if (videoSlide) {
+              videoSlide.style.display = "none";
               videoSlide.src = "about:blank";
             }
-            mainImage.style.display = "block"; // Show image
-            mainImage.src = slideData.img; // Set image src
+            mainImage.style.display = "block";
+            mainImage.src = slideData.img;
           }
 
-          // Update the text
           aboutText.textContent = slideData.text;
           materialText.textContent = slideData.material;
 
-          // Update the 'active' class on thumbnails
           thumbnails.forEach((thumb) => thumb.classList.remove("active"));
-          thumbnails[index].classList.add("active");
+          if (thumbnails[index]) {
+            thumbnails[index].classList.add("active");
+          }
         }
 
-        // 4. Attach event listeners
+        // 4. Attach event listeners (Arrows & Thumbnails)
         leftArrow.addEventListener("click", () => {
           let newIndex =
             (currentIndex - 1 + slidesData.length) % slidesData.length;
@@ -672,6 +666,47 @@
             }
           });
         });
+
+        /* --- NEW: SWIPE LOGIC START --- */
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        // Listen for the start of a touch
+        slideContainer.addEventListener(
+          "touchstart",
+          function (e) {
+            touchStartX = e.changedTouches[0].screenX;
+          },
+          { passive: true }
+        );
+
+        // Listen for the end of a touch
+        slideContainer.addEventListener(
+          "touchend",
+          function (e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+          },
+          { passive: true }
+        );
+
+        function handleSwipe() {
+          // Calculate the difference (threshold of 50px to avoid accidental swipes)
+          if (Math.abs(touchEndX - touchStartX) < 50) return;
+
+          if (touchEndX < touchStartX) {
+            // Swiped Left -> Go to Next Slide
+            let newIndex = (currentIndex + 1) % slidesData.length;
+            showSlide(newIndex);
+          }
+
+          if (touchEndX > touchStartX) {
+            // Swiped Right -> Go to Previous Slide
+            let newIndex =
+              (currentIndex - 1 + slidesData.length) % slidesData.length;
+            showSlide(newIndex);
+          }
+        }
 
         // 5. Initialize the slider to the first slide
         showSlide(0);

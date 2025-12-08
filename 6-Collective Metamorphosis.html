@@ -641,24 +641,18 @@
         // 1. Find the wrapper element
         const slider = document.getElementById(sliderId);
 
-        // Safety check: If slider or data is missing, just stop.
-        if (!slider || !slidesData || slidesData.length === 0) {
-          console.error("Slider " + sliderId + " is missing HTML or data.");
-          return;
-        }
-
         // 2. Find all elements for this slider
         const mainImage = slider.querySelector(".main-image");
         const aboutText = slider.querySelector(".about-text");
         const materialText = slider.querySelector(".material-text");
+        const thumbnails = slider.querySelectorAll(".thumbnails img");
         const leftArrow = slider.querySelector(".arrow.left");
         const rightArrow = slider.querySelector(".arrow.right");
-        const thumbnailContainer = slider.querySelector(".thumbnails");
-        const thumbnails = slider.querySelectorAll(".thumbnails img");
+        const slideContainer = slider.querySelector(".slide-container"); // We need this for the swipe listener
 
-        // Get ALL video iframes and their original src
-        const videoSlides = slider.querySelectorAll(".video-slide");
-        const videoSrcs = Array.from(videoSlides).map((video) => video.src);
+        // Find the video slide
+        const videoSlide = slider.querySelector(".video-slide");
+        const videoSrc = videoSlide ? videoSlide.src : null;
 
         let currentIndex = 0;
 
@@ -666,100 +660,90 @@
         function showSlide(index) {
           currentIndex = index;
           const slideData = slidesData[index];
-          if (!slideData) return; // Exit if slide data doesn't exist
 
           if (slideData.type === "video") {
-            // --- This is a VIDEO slide ---
-
-            // Find which video this is (0th, 1st, 2nd video in the data array?)
-            let videoIndex = 0;
-            for (let i = 0; i < index; i++) {
-              if (slidesData[i].type === "video") {
-                videoIndex++;
-              }
+            mainImage.style.display = "none";
+            if (videoSlide) {
+              videoSlide.src = videoSrc;
+              videoSlide.style.display = "block";
             }
-
-            // Hide the main image
-            if (mainImage) mainImage.style.display = "none";
-
-            // Loop over all <iframe ...> elements found in the HTML
-            videoSlides.forEach((videoEl, i) => {
-              // 'i' is the HTML <iframe ...> index (0, 1, 2...)
-              // 'videoIndex' is the data { type: "video" } index (0, 1, 2...)
-
-              if (i === videoIndex) {
-                // This is the correct <iframe> for the correct data object. Show it.
-                if (videoSrcs[i]) videoEl.src = videoSrcs[i];
-                videoEl.style.display = "block";
-              } else {
-                // This is a different <iframe>. Hide it and stop it.
-                videoEl.style.display = "none";
-                videoEl.src = "about:blank";
-              }
-            });
           } else {
-            // --- This is an IMAGE slide ---
-
-            // Hide ALL video iframes and stop them
-            videoSlides.forEach((videoEl, i) => {
-              videoEl.style.display = "none";
-              videoEl.src = "about:blank";
-            });
-
-            // Show the main image
-            if (mainImage) {
-              mainImage.style.display = "block";
-              mainImage.src = slideData.img;
+            if (videoSlide) {
+              videoSlide.style.display = "none";
+              videoSlide.src = "about:blank";
             }
+            mainImage.style.display = "block";
+            mainImage.src = slideData.img;
           }
 
-          // Update the text
-          if (aboutText) aboutText.textContent = slideData.text;
-          if (materialText) materialText.textContent = slideData.material;
+          aboutText.textContent = slideData.text;
+          materialText.textContent = slideData.material;
 
-          // Update the 'active' class on thumbnails
-          thumbnails.forEach((thumb, i) => {
-            if (i === index) {
-              thumb.classList.add("active");
-            } else {
-              thumb.classList.remove("active");
-            }
-          });
+          thumbnails.forEach((thumb) => thumb.classList.remove("active"));
+          if (thumbnails[index]) {
+            thumbnails[index].classList.add("active");
+          }
         }
 
-        // 4. Attach event listeners
-        // We only attach them if there is more than one slide
-        if (slidesData.length > 1) {
-          if (leftArrow) {
-            leftArrow.style.display = "block"; // Ensure it's visible
-            leftArrow.addEventListener("click", () => {
-              let newIndex =
-                (currentIndex - 1 + slidesData.length) % slidesData.length;
-              showSlide(newIndex);
-            });
+        // 4. Attach event listeners (Arrows & Thumbnails)
+        leftArrow.addEventListener("click", () => {
+          let newIndex =
+            (currentIndex - 1 + slidesData.length) % slidesData.length;
+          showSlide(newIndex);
+        });
+
+        rightArrow.addEventListener("click", () => {
+          let newIndex = (currentIndex + 1) % slidesData.length;
+          showSlide(newIndex);
+        });
+
+        thumbnails.forEach((thumb, index) => {
+          thumb.addEventListener("click", () => {
+            if (slidesData[index]) {
+              showSlide(index);
+            }
+          });
+        });
+
+        /* --- NEW: SWIPE LOGIC START --- */
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        // Listen for the start of a touch
+        slideContainer.addEventListener(
+          "touchstart",
+          function (e) {
+            touchStartX = e.changedTouches[0].screenX;
+          },
+          { passive: true }
+        );
+
+        // Listen for the end of a touch
+        slideContainer.addEventListener(
+          "touchend",
+          function (e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+          },
+          { passive: true }
+        );
+
+        function handleSwipe() {
+          // Calculate the difference (threshold of 50px to avoid accidental swipes)
+          if (Math.abs(touchEndX - touchStartX) < 50) return;
+
+          if (touchEndX < touchStartX) {
+            // Swiped Left -> Go to Next Slide
+            let newIndex = (currentIndex + 1) % slidesData.length;
+            showSlide(newIndex);
           }
-          if (rightArrow) {
-            rightArrow.style.display = "block"; // Ensure it's visible
-            rightArrow.addEventListener("click", () => {
-              let newIndex = (currentIndex + 1) % slidesData.length;
-              showSlide(newIndex);
-            });
+
+          if (touchEndX > touchStartX) {
+            // Swiped Right -> Go to Previous Slide
+            let newIndex =
+              (currentIndex - 1 + slidesData.length) % slidesData.length;
+            showSlide(newIndex);
           }
-          if (thumbnailContainer) {
-            thumbnailContainer.style.display = "flex"; // Ensure it's visible
-            thumbnails.forEach((thumb, index) => {
-              thumb.addEventListener("click", () => {
-                if (slidesData[index]) {
-                  showSlide(index);
-                }
-              });
-            });
-          }
-        } else {
-          // ONLY 1 SLIDE: Hide the arrows and thumbnails
-          if (leftArrow) leftArrow.style.display = "none";
-          if (rightArrow) rightArrow.style.display = "none";
-          if (thumbnailContainer) thumbnailContainer.style.display = "none";
         }
 
         // 5. Initialize the slider to the first slide
